@@ -41,7 +41,7 @@ const Fund = () => {
                 <img
                   src={item.img}
                   alt={item.name}
-                  className="h-8 object-contain"
+                  className="w-[140px] h-[60px] object-contain"
                 />
               </div>
             ))}

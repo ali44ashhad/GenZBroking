@@ -7,6 +7,7 @@ import airtel from './funds/airtel.png'
 import banktransfer from './funds/banktransfer.png';
 import koraPay from './funds/korapay.png';
 import mtn from './funds/mtn.png';
+import mpi from './funds/mpi.png';
 import mpesa from './funds/mpesa.png';
 import visa from './funds/visa.png';
 import wireTransfer from './funds/wiretransfer.png';
@@ -22,6 +23,7 @@ mtn,
 mpesa,
 visa,
 wireTransfer,
+mpi,
 }
 
 export default images;
