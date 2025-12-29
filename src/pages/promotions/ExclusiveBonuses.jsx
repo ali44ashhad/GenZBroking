@@ -7,7 +7,7 @@ const ExclusiveBonuses = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-white p-4 md:p-10">
       {/* Main Gray Card Container */}
-      <div className="w-full max-w-5xl rounded-[2rem] bg-[#F8F9FA] px-6 py-12 shadow-inner md:px-16 md:py-16">
+      <div className="w-7xl rounded-[2rem] bg-[#F8F9FA] px-6 py-12 shadow-inner md:px-16 md:py-16">
 
         {/* Header */}
         <div className="mb-12 text-center">

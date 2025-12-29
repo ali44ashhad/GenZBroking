@@ -43,7 +43,7 @@ const FormsAndDocuments = () => {
         </h2>
 
         {/* Links Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 px-2">
           {links.map((link, index) => (
             <a
               key={index}

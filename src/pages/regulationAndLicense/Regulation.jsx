@@ -4,7 +4,7 @@ import Fund from '../../components/Fund'
 const Regulation = () => {
   return (
     <>
-  <div className="mt-10 w-full flex justify-center px-4 py-16 md:py-24 bg-white">
+  <div className="mt-25 w-full flex justify-center px-4 py-16 md:py-24 bg-white">
       {/* Container restricted to 7xl */}
       <div className="w-full max-w-7xl relative">
         
@@ -143,27 +143,46 @@ const Regulation = () => {
         <div className="absolute inset-0 bg-black"></div>
 
         {/* Content Overlay */}
-        <div className="relative z-10 h-full flex flex-col justify-center px-8 md:px-20 text-white space-y-4 md:space-y-6">
-          <div>
-            <span className="text-[#2DD4BF] font-bold text-xs md:text-sm tracking-widest uppercase">
-              Where Trust Matters.
-            </span>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mt-2">
-              Trade With A Reliable Broker
-            </h1>
-          </div>
-          
-          <p className="text-gray-200 max-w-lg text-sm md:text-lg leading-snug">
-            SGFX offers an extensive range of products and services, 
-            providing a top-notch trading experience.
-          </p>
-          
-          <div className="pt-4">
-            <button className="border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-blue-900 transition-all duration-300">
-              Read more about SGFX
-            </button>
-          </div>
-        </div>
+     <div className="relative z-10 h-[300] flex flex-col justify-center 
+  px-5 sm:px-6 md:px-20 
+  text-white space-y-4 md:space-y-6 overflow-hidden">
+
+  {/* Heading Block */}
+  <div className="max-w-xl">
+    <span className="text-[#2DD4BF] font-semibold 
+      text-[10px] sm:text-xs md:text-sm 
+      tracking-widest uppercase">
+      Where Trust Matters.
+    </span>
+
+    <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl 
+      font-bold mt-2 leading-tight">
+      Trade With A Reliable Broker
+    </h1>
+  </div>
+
+  {/* Description */}
+  <p className="text-gray-200 max-w-md 
+    text-sm sm:text-base md:text-lg 
+    leading-relaxed">
+    SGFX offers an extensive range of products and services,
+    providing a top-notch trading experience.
+  </p>
+
+  {/* CTA */}
+  <div className="pt-3 sm:pt-4">
+    <button className="border border-white 
+      text-white font-semibold 
+      text-sm sm:text-base
+      py-2.5 sm:py-3 px-6 sm:px-8 
+      rounded-lg 
+      hover:bg-white hover:text-blue-900 
+      transition-all duration-300">
+      Read more about SGFX
+    </button>
+  </div>
+</div>
+
       </div>
 
     </div>

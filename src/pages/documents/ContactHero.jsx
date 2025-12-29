@@ -1,15 +1,19 @@
 import React from "react";
 import { Mail, Clock, Globe, Facebook, Instagram, Youtube, MessageCircle } from 'lucide-react';
-// import { socials } from "../../data/data";   
 import Fund from "../../components/Fund";
- 
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
+
 
 const socials = [
-  { id: 1, name: 'Facebook', url: 'https://facebook.com' },
-  { id: 2, name: 'Twitter', url: 'https://twitter.com' },
-  { id: 3, name: 'Instagram', url: 'https://instagram.com' },
-];
+  { id: 1, name: <FaFacebook />, url: "https://facebook.com" },
+  { id: 2, name: <FaTwitter />, url: "https://twitter.com" },
+  { id: 3, name: <FaInstagram />, url: "https://instagram.com" },
+  { id: 4, name: <FaWhatsapp />, url: "https://wa.me/" },
+  { id: 5, name: <FaLinkedin />, url: "https://linkedin.com" },
 
+
+
+];
 export default function ContactHero() {
   return (  
    <>
@@ -21,10 +25,8 @@ export default function ContactHero() {
     className="
       relative
       mx-auto
-      max-w-6xl            /* ⬅ width reduced & aligned with next sections */
-      min-h-[520px]        /* ⬅ height increased */
-      md:min-h-[620px]
-      lg:min-h-[720px]
+      max-w-7xl           
+      h-[500px]
       overflow-hidden
       rounded-[40px]
       bg-gradient-to-r
@@ -35,7 +37,7 @@ export default function ContactHero() {
       items-center
       justify-center
       text-center
-      shadow-2xl
+       
     "
   >
     
@@ -198,9 +200,9 @@ export default function ContactHero() {
 
     {/* contact last section */}
 
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center p-6">
+    <div className="  flex items-center justify-center p-6">
       {/* Main Container with Radial Gradient */}
-      <div className="w-full max-w-4xl rounded-[50px] bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#1e293b] via-[#0f172a] to-[#020617] p-12 md:p-20 text-center shadow-2xl border border-white/5">
+      <div className="w-7xl bg-gradient-to-b from-[#023B81] to-[#011625] rounded-[50px] p-12 md:p-20 text-center shadow-2xl border border-white/5">
         
         {/* Header Section */}
         <div className="mb-12 space-y-4">
@@ -218,19 +220,19 @@ export default function ContactHero() {
 
         {/* Social Icons Grid */}
         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-          {socials.map((social, index) => (
-            <button
-              key={index}
-              className="glass-card group relative flex items-center justify-center w-16 h-16 md:w-20 md:h-20 transition-all duration-300 hover:-translate-y-2"
-            >
-              <div className={`${social.color} transition-transform duration-300 group-hover:scale-110`}>
-                {social.icon}
-              </div>
-              
-              {/* Internal Glow Effect */}
-              <div className="absolute inset-0 rounded-2xl bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-            </button>
-          ))}
+        {socials.map((social) => (
+    <a
+      key={social.id}
+      href={social.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="glass-card group relative flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-xl transition-all duration-300 hover:-translate-y-2"
+    >
+      <div className="text-white text-2xl transition-transform duration-300 group-hover:scale-110">
+        {social.name}
+      </div>
+    </a>
+  ))}
         </div>
 
         {/* Custom Styles for Glassmorphism */}

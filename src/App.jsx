@@ -27,6 +27,7 @@ import Indices from './pages/tradings/Indices'
 import Product from './pages/tradings/Products'
 import InstallationMeta from './pages/tradings/InstallationMeta'
 import ScrollToTop from './components/ScrollToTop'
+import News from './pages/news/News'
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Route path="/promotions" element={<Promotions />} />
         <Route path="/forms-&-documents" element={<FormsAndDocuments />} />
         <Route path="/risk-disclosure" element={<RiskDisclouser />} />
+        <Route path="/news" element={<News/>}/>
 
         {/* TOOLS */}
         <Route path="/tools/economic-calender" element={<Economic />} />

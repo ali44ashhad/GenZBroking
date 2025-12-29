@@ -1,10 +1,22 @@
 import React, { useState, useEffect, useRef } from "react";
 import {
-  Facebook, Mail, Instagram, Linkedin, Youtube, Twitter,
   ChevronDown, Menu, X, ArrowRight
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import images from "../assets/images";
+import {
+  FaFacebookF,
+  FaEnvelope,
+  FaInstagram,
+  FaWhatsapp,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
+
+import { FaXTwitter } from "react-icons/fa6";
+
+
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -57,17 +69,39 @@ const Navbar = () => {
 
   return (
     <nav ref={navRef} className="fixed top-0 z-50 w-full bg-white shadow-sm">
+<nav className="w-full bg-gradient-to-r from-blue-700 via-blue-600 to-teal-500 py-3 px-4 md:px-10">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        
+        {/* Social Icons Container */}
+        <div className="flex items-center space-x-5 text-white">
+          <a href="#" className="hover:text-gray-300 transition-colors"><FaFacebookF size={18} /></a>
+          <a href="#" className="hover:text-gray-300 transition-colors"><FaEnvelope size={18} /></a>
+          <a href="#" className="hover:text-gray-300 transition-colors"><FaInstagram size={18} /></a>
+          <a href="#" className="hover:text-gray-300 transition-colors"><FaWhatsapp size={18} /></a>
+          <a href="#" className="hover:text-gray-300 transition-colors"><FaLinkedinIn size={18} /></a>
+          <a href="#" className="hover:text-gray-300 transition-colors"><FaYoutube size={20} /></a>
+          <a href="#" className="hover:text-gray-300 transition-colors"><FaXTwitter size={18} /></a>
+        </div>
 
+        {/* Action Buttons */}
+        <div className="flex items-center space-x-6 text-white font-medium text-sm md:text-base">
+          <a href="#" className="hover:underline underline-offset-4">
+            Try Free Demo
+          </a>
+          <a href="#" className="hover:underline underline-offset-4">
+            IB Login
+          </a>
+        </div>
+
+      </div>
+    </nav>
       {/* MAIN NAV */}
       <div className="border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
 
           {/* LOGO */}
           <Link to="/" className="flex items-center gap-1">
-            <span className="text-3xl font-black italic">SGFX</span>
-            <div className="bg-blue-500 p-0.5 rounded-sm">
-              <ArrowRight size={18} className="-rotate-45 text-white" />
-            </div>
+            <img src={images.logo} alt="SGFX Logo" className="h-12 w-auto" />
           </Link>
 
           {/* DESKTOP MENU */}

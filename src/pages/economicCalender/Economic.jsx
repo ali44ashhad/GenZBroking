@@ -7,7 +7,7 @@ import EconomicData from './EconomicData';
 const Economic = () => {
   return (
    <>
-        <div className="flex items-center justify-center h-200 bg-gray-100 p-4">
+      <div className="flex items-center justify-center h-200 bg-gray-100 p-4">
       {/* Main Container */}
       <div className="relative w-full max-w-6xl overflow-hidden rounded-[2.5rem] bg-gradient-to-b from-[#003B95] to-[#001A4D] px-6 py-16 md:py-24 text-center shadow-2xl">
         

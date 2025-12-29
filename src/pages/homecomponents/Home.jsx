@@ -7,189 +7,266 @@ import Dynamictrading from './Dynamictrading';
 import Upgrade from './Upgrade';
 import StartTrading from './StartTrading';
 import Fund from '../../components/Fund';
- 
+import images from '../../assets/images';
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 }
+};
+
 const Home = () => {
 
   const duplicatedItems = [...tickerItems, ...tickerItems];
+
   return (
     <>
-      <div className="mt-50 mx-auto max-w-7xl overflow-hidden rounded-[40px] bg-[#051139] p-8 md:p-16 lg:p-20 ">
-      
-      {/* --- BACKGROUND PATTERN --- */}
-    
-      <img
-      src=""
-      alt=""
-      className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none"
-    />
+      {/* ================= HERO SECTION ================= */}
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={fadeUp}
+        transition={{ duration: 0.8 }}
+        className="mt-50 mx-auto max-w-7xl overflow-hidden rounded-[40px] bg-[#051139] relative"
+      >
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none"
+        >
+          <source src={images.bgVideo} type="video/mp4" />
+        </video>
 
-      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
-        
-        {/* --- LEFT CONTENT SECTION --- */}
-        <div className="w-full lg:w-1/2 text-left">
-          <motion.h4 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-[#00d1b2] font-bold tracking-[0.2em] text-sm md:text-base uppercase mb-6"
-          >
-            Your Global Trading Partner
-          </motion.h4>
-          
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-8"
-          >
-            Your Trusted Online Trading Platform For Global Markets
-          </motion.h1>
-
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+        <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12 p-8 md:p-16">
+          <motion.div
+            variants={fadeUp}
             transition={{ delay: 0.2 }}
-            className="text-gray-300 text-lg md:text-xl max-w-xl mb-10 leading-relaxed"
+            className="w-full lg:w-1/2 text-left"
           >
-            Explore a user-friendly trading app and a secure online platform designed to give investors seamless access to global markets.
+            <motion.h4
+              variants={fadeUp}
+              className="text-[#00d1b2] font-bold tracking-[0.25em] text-sm md:text-base uppercase mb-6"
+            >
+              Smart Trading Starts Here
+            </motion.h4>
+
+            <motion.h1
+              variants={fadeUp}
+              transition={{ delay: 0.1 }}
+              className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-8"
+            >
+              Trade Global Markets with Confidence and Precision
+            </motion.h1>
+
+            <motion.p
+              variants={fadeUp}
+              transition={{ delay: 0.2 }}
+              className="text-gray-200 text-lg md:text-xl max-w-xl mb-10 leading-relaxed"
+            >
+              Access a powerful trading ecosystem built for speed, transparency,
+              and performance—designed for traders who demand more from every move.
+            </motion.p>
+
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-white text-[#051139] px-10 py-4 rounded-xl font-bold text-lg shadow-2xl"
+            >
+              Start Trading Now
+            </motion.button>
+          </motion.div>
+
+          <motion.div
+            variants={fadeUp}
+            transition={{ delay: 0.4 }}
+            className="w-full lg:w-1/2"
+          />
+        </div>
+      </motion.div>
+
+      {/* ================= SECOND SECTION ================= */}
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeUp}
+        transition={{ duration: 0.8 }}
+        className="mx-auto max-w-7xl overflow-hidden rounded-[40px] bg-[#051139] p-8 md:p-16 lg:p-20 m-20"
+      >
+        <div className="text-center">
+          <motion.p variants={fadeUp} className="text-[#00d1b2] font-bold tracking-widest text-sm uppercase mb-4">
+            Why Traders Choose Us
           </motion.p>
 
-          <motion.button 
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-white text-[#051139] px-10 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg"
+          <motion.h2
+            variants={fadeUp}
+            transition={{ delay: 0.1 }}
+            className="text-3xl md:text-5xl font-bold text-[#051139] mb-20 max-w-4xl mx-auto"
           >
-            Get Started
-          </motion.button>
+            Experience Professional Trading with Advanced Tools and Global Access
+          </motion.h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-24 md:gap-x-8">
+            {features.map((feature, index) => (
+              <motion.div
+                key={index}
+                variants={fadeUp}
+                transition={{ delay: index * 0.15 }}
+                className="relative bg-white rounded-[32px] pt-20 pb-12 px-6 shadow-md flex flex-col items-center"
+              >
+                <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-28 h-28">
+                  <img src={feature.icon} alt={feature.alt} className="w-full h-full object-contain" />
+                </div>
+
+                <h3 className="text-[#051139] text-xl md:text-2xl font-bold text-center">
+                  {feature.title}
+                </h3>
+              </motion.div>
+            ))}
+          </div>
+
+          <p className="mt-12 text-gray-400 text-sm">
+            ** Terms may vary by instrument and region
+          </p>
+        </div>
+      </motion.section>
+
+      {/* ================= THIRD SECTION ================= */}
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeUp}
+        className="bg-white py-20 overflow-hidden"
+      >
+        <div className="max-w-7xl mx-auto px-6 text-center mb-16">
+          <motion.p variants={fadeUp} className="text-[#00d1b2] font-bold tracking-widest text-sm uppercase mb-4">
+            Trade Smarter
+          </motion.p>
+
+          <motion.h2
+            variants={fadeUp}
+            transition={{ delay: 0.1 }}
+            className="text-3xl md:text-5xl font-bold text-[#051139] mb-6"
+          >
+            All-in-One Platform for Modern Traders
+          </motion.h2>
+
+          <motion.p
+            variants={fadeUp}
+            transition={{ delay: 0.2 }}
+            className="text-gray-500 text-lg max-w-2xl mx-auto"
+          >
+            From real-time execution to institutional-grade liquidity,
+            our platform supports fast, informed, and flexible trading decisions.
+          </motion.p>
         </div>
 
-        {/* --- RIGHT IMAGE SECTION --- */}
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.3, duration: 0.8 }}
-          className="w-full lg:w-1/2 flex justify-center lg:justify-end"
+   <motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  viewport={{ once: true }}
+  className="relative overflow-hidden w-full"
+>
+  <motion.div
+    className="flex items-center gap-4 w-max"
+    initial={{ x: 0 }}              // 👈 tiles visible initially
+    animate={{ x: "-50%" }}         // 👈 scroll right → left
+    transition={{
+      duration: 30,                 // speed (increase = slower)
+      ease: "linear",
+      repeat: Infinity,
+    }}
+  >
+    {/* FIRST SET */}
+    {duplicatedItems.map((item, index) => (
+      <div
+        key={`item-${index}`}
+        className={`flex items-center gap-3 px-6 py-3 rounded-full border whitespace-nowrap
+          ${item.dark ? "bg-[#2b50ed] text-white" : "bg-white text-gray-800"}
+        `}
+      >
+        <CheckCircle2
+          size={20}
+          className={item.dark ? "text-white" : "text-[#2b50ed]"}
+        />
+        <span className="font-semibold text-sm md:text-base">
+          {item.text}
+        </span>
+      </div>
+    ))}
+
+    {/* DUPLICATE SET (for seamless loop) */}
+    {duplicatedItems.map((item, index) => (
+      <div
+        key={`dup-${index}`}
+        className={`flex items-center gap-3 px-6 py-3 rounded-full border whitespace-nowrap
+          ${item.dark ? "bg-[#2b50ed] text-white" : "bg-white text-gray-800"}
+        `}
+      >
+        <CheckCircle2
+          size={20}
+          className={item.dark ? "text-white" : "text-[#2b50ed]"}
+        />
+        <span className="font-semibold text-sm md:text-base">
+          {item.text}
+        </span>
+      </div>
+    ))}
+  </motion.div>
+</motion.div>
+    
+      </motion.section>
+
+      {/* ================= FOURTH SECTION ================= */}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeUp}
+        className=" bg-white flex flex-col items-center p-4 md:p-12"
+      >
+        <motion.header variants={fadeUp} className="text-center mb-10">
+          <p className="text-teal-500 tracking-widest text-sm uppercase mb-2">
+            Market Pulse
+          </p>
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
+            Stay Ahead of Market Movements in Real Time
+          </h1>
+        </motion.header>
+
+        <motion.div
+          variants={fadeUp}
+          transition={{ delay: 0.2 }}
+          className="w-full max-w-5xl rounded-xl overflow-hidden border-4 border-gray-100"
         >
-          {/* Replace 'globe-graphic.png' with the actual asset from your image_0966ff.png */}
-          <img 
-            src="/path-to-your-globe-graphic.png" 
-            alt="Global Trading Chart Globe" 
-            className="w-full max-w-[500px] h-auto object-contain drop-shadow-[0_0_30px_rgba(0,209,178,0.3)]"
-          />
+          <div className="aspect-video w-full">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Platform Walkthrough"
+              frameBorder="0"
+              allowFullScreen
+            />
+          </div>
         </motion.div>
 
-      </div>
-    </div>
+        <motion.div
+          variants={fadeUp}
+          transition={{ delay: 0.3 }}
+          className="mt-8 text-gray-400 text-sm"
+        >
+          Daily Market Insights • Global Coverage • Expert Analysis
+        </motion.div>
+      </motion.div>
 
-
-    {/* SECOND SECTION */}
-        <section className="bg-[#f8faff] mx-auto max-w-7xl overflow-hidden rounded-[40px] bg-[#051139] p-8 md:p-16 lg:p-20 m-20">
-      <div className="max-w-7xl mx-auto text-center">
-        {/* Sub-header */}
-        <p className="text-[#00d1b2] font-bold tracking-widest text-sm uppercase mb-4">
-          Redefining Withdrawal Experience
-        </p>
-        
-        {/* Main Heading */}
-        <h2 className="text-3xl md:text-5xl font-bold text-[#051139] mb-20 max-w-4xl mx-auto leading-tight">
-          Access Global Trading Potential with World-Class Conditions and Support
-        </h2>
-
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-24 md:gap-x-8 lg:gap-x-12 mt-10">
-          {features.map((feature, index) => (
-            <div 
-              key={index} 
-              className="relative bg-white rounded-[32px] pt-20 pb-12 px-6 shadow-[0_10px_40px_rgba(0,0,0,0.04)] flex flex-col items-center border border-gray-50"
-            >
-              {/* Overlapping Icon Container */}
-              <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-28 h-28 md:w-32 md:h-32">
-                <img 
-                  src={feature.icon} 
-                  alt={feature.alt} 
-                  className="w-full h-full object-contain drop-shadow-xl"
-                />
-              </div>
-
-              {/* Card Title */}
-              <h3 className="text-[#051139] text-xl md:text-2xl font-bold text-center">
-                {feature.title}
-              </h3>
-            </div>
-          ))}
-        </div>
-
-        {/* Footer Note */}
-        <p className="mt-12 text-gray-400 text-sm">
-          ** Only for certain products
-        </p>
-      </div>
-    </section>
-
-
-    {/* third section */}
-    <section className="bg-white py-20 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 text-center mb-16">
-        {/* Sub-header */}
-        <p className="text-[#00d1b2] font-bold tracking-widest text-sm uppercase mb-4">
-          Level up your trades
-        </p>
-        
-        {/* Main Heading */}
-        <h2 className="text-3xl md:text-5xl font-bold text-[#051139] mb-6 max-w-4xl mx-auto leading-tight">
-          Trade Top Global Assets on a Secure and Dynamic Trading Platform
-        </h2>
-
-        {/* Description */}
-        <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-          Enjoy optimized spreads, full market access, and advanced tools through a reliable broker trading platform built for efficiency.
-        </p>
-      </div>
-
-      {/* --- CONTINUOUS TICKER --- */}
-      <div className="relative flex overflow-x-hidden">
-        <div className="animate-marquee flex items-center gap-4">
-          {duplicatedItems.map((item, index) => (
-            <div
-              key={index}
-              className={`flex items-center gap-3 px-6 py-3 rounded-full border whitespace-nowrap transition-transform cursor-default
-                ${item.dark 
-                  ? 'bg-[#2b50ed] border-[#2b50ed] text-white shadow-lg shadow-blue-200' 
-                  : 'bg-white border-gray-100 text-gray-800 shadow-sm'
-                }`}
-            >
-              <CheckCircle2 
-                size={20} 
-                className={item.dark ? 'text-white' : 'text-[#2b50ed]'} 
-              />
-              <span className="font-semibold text-sm md:text-base">
-                {item.text}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* CSS for the animation (Can be placed in global CSS) */}
-      <style dangerouslySetInnerHTML={{ __html: `
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .animate-marquee {
-          animation: marquee 40s linear infinite;
-        }
-        .animate-marquee:hover {
-          animation-play-state: paused;
-        }
-      `}} />
-    </section>
-
-    <Traders/>
-    <Dynamictrading/>
-    <Upgrade/>
-    <StartTrading/>
-    <Fund/>
-
+      {/* ================= OTHER COMPONENTS ================= */}
+      <Traders />
+      <Dynamictrading />
+      <Upgrade />
+      <StartTrading />
+      <Fund />
     </>
   )
 }

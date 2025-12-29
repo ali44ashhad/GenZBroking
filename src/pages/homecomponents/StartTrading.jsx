@@ -5,7 +5,7 @@ import {
   Wallet,
   Activity,
 } from "lucide-react";
-
+import images from "../../assets/images";
 
 
 
@@ -92,9 +92,9 @@ export default function StartTrading() {
             {/* Image */}
             <div className="relative p-10 flex justify-center">
               <img
-                src="/demo-phone.png"
+                src={images.demoAccounting}
                 alt="Trading App"
-                className="max-w-[320px] lg:max-w-[380px]"
+                className="max-w-[420px] lg:max-w-[480px] rounded-3xl"
               />
             </div>
 

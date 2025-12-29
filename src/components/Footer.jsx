@@ -3,6 +3,9 @@ import {
   Facebook, Mail, Instagram, Linkedin, Youtube, 
   Twitter, MessageCircle, ArrowRight 
 } from 'lucide-react';
+import images from '../assets/images';
+
+
 
 const Footer = () => {
   const footerData = {
@@ -59,10 +62,7 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="lg:col-span-3">
               <div className="flex items-center space-x-1 mb-6">
-                <span className="text-3xl font-black italic tracking-tighter text-white">SGFX</span>
-                <div className="bg-blue-500 p-0.5 rounded-sm">
-                  <ArrowRight className="-rotate-45 text-white" size={18} strokeWidth={3} />
-                </div>
+                <img src={images.genzBookingLogo} alt="SGFX Logo" className="h-15 w-auto" />
               </div>
               <p className="text-sm leading-relaxed mb-6 max-w-xs">
                 Discover the ultimate hub for online trading at our platform!

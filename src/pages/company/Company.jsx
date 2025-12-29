@@ -2,34 +2,47 @@ import React from 'react';
 import ExploreTrading from './ExploreTrading';
 import Testimonial from './Testimonial';
 import Fund from '../../components/Fund';
+import images from '../../assets/images';
 
 
 const Company = () => {
  
   return (
     <>
-         <div className="mt-50 relative w-[70%] m-auto min-h-[500px] md:min-h-[500px] lg:min-h-[800px] flex items-center justify-center rounded-2xl bg-gradient-to-r from-[#0B1441] to-[#0C4FA1] px-6 md:px-12 pt-10">
-  
-  {/* Floating Coins */}
-  <img src="/images/coin-dollar.png" alt="$" className="absolute top-5 left-10 w-16 h-16 animate-float-slow" />
-  <img src="/images/coin-euro.png" alt="€" className="absolute top-20 right-16 w-20 h-20 animate-float-medium" />
-  <img src="/images/coin-yen.png" alt="¥" className="absolute bottom-20 left-16 w-20 h-20 animate-float-fast" />
-  <img src="/images/coin-pound.png" alt="£" className="absolute bottom-5 right-10 w-16 h-16 animate-float-slow" />
+      <div className="mt-50 relative w-[95%] md:w-[85%] lg:w-[70%] m-auto 
+  min-h-[420px] md:min-h-[500px] lg:min-h-[800px] 
+  flex items-center justify-center rounded-2xl overflow-hidden">
+
+  {/* Background Image */}
+  <img
+    src={images.heroBg}
+    alt="Trading Background"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
 
   {/* Center Content */}
-  <div className="relative z-10 text-center max-w-3xl">
-    <span className="text-emerald-400 uppercase tracking-wider text-sm md:text-base">Who We Are</span>
-    <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold mt-4">
+  <div className="relative z-10 text-center max-w-3xl px-5 md:px-12">
+    <span className="text-emerald-400 uppercase tracking-wider text-xs md:text-base">
+      Who We Are
+    </span>
+
+    <h1 className="text-white text-2xl md:text-5xl lg:text-6xl font-bold mt-4">
       A Trusted Name in <br /> Online Trading
     </h1>
-    <p className="text-white/70 text-base md:text-lg mt-4">
-      Focusing on what truly matters: reliable trading tools, clear communication, and long-term relationships with our clients.
+
+    <p className="text-white/80 text-sm md:text-lg mt-4">
+      Focusing on what truly matters: reliable trading tools, clear communication,
+      and long-term relationships with our clients.
     </p>
-    <button className="mt-6 px-8 py-3 bg-white text-[#0B1441] font-semibold rounded-full hover:bg-gray-200 transition-all duration-300">
+
+    <button className="mt-6 px-7 py-3 bg-white text-[#0B1441] font-semibold 
+      rounded-full hover:bg-gray-200 transition-all duration-300">
       Get Started
     </button>
   </div>
 </div>
+
+
 
 {/* second section  */}
 <div className="bg-white min-h-screen py-16 px-4 font-sans text-gray-700">

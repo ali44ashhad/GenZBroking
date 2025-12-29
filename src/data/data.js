@@ -44,22 +44,22 @@ export const features = [
     Forex: {
       title: "Trade Global Forex Pairs with Ultra-Low Spreads",
       desc: "Access the world's largest financial market. Trade major, minor, and exotic currency pairs with high liquidity and rapid execution.",
-      image: "https://images.unsplash.com/photo-1611974717535-7ddcecc7698e?auto=format&fit=crop&q=80&w=800", // Replace with your assets
+      image: images.forex
     },
     Indices: {
       title: "Invest in Global Indices with Ease",
       desc: "Take positions on the world's leading stock indices including the S&P 500, NASDAQ, and FTSE 100 with competitive margins.",
-      image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=800",
+      image: images.globalStock,
     },
     Stocks: {
       title: "Trade Popular Global Stocks with Speed and Simplicity",
       desc: "Access shares from top companies like Apple, Tesla, Amazon, and more. With SGFX, stock CFD trading is intuitive, fast, and flexible, enabling you to go long or short with ease.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+      image: images.stock ,
     },
     Crypto: {
       title: "Explore the Crypto Market 24/7",
       desc: "Trade CFDs on Bitcoin, Ethereum, and other popular cryptocurrencies without the need for a digital wallet.",
-      image: "https://images.unsplash.com/photo-1621761126066-6ecb719f075d?auto=format&fit=crop&q=80&w=800",
+      image: images.bitCoin,
     }
   };
 
@@ -447,3 +447,32 @@ export const installationStepsData = [
   { id: 4, title: 'Log Into Your SGFX Account' },
   { id: 5, title: 'Take a Moment to Explore' },
 ];
+
+// news data //
+export const categoryQueryMap = {
+  "All": "trading",
+  "Banking": "banking",
+  "Behavioral Finance": "behavioral finance",
+  "Blog": "finance blog",
+  "Commodities & Energy": "commodities energy",
+  "Corporate Finance": "corporate finance",
+  "Crypto & Blockchain": "cryptocurrency blockchain",
+  "Economic Research & Insights": "economic research",
+  "Economy": "economy",
+  "Financial Technology Trends": "financial technology",
+  "Fintech": "fintech",
+  "Forex": "forex trading",
+  "Global Markets": "global markets",
+  "Indices": "stock indices",
+  "Investing": "investing",
+  "Markets": "financial markets",
+  "News": "financial news",
+  "Personal Finance": "personal finance",
+  "Real Estate & REITs": "real estate reits",
+  "Regulations & Policy": "financial regulations",
+  "Startups & Venture Capital": "venture capital startups",
+  "Sustainability & ESG": "esg sustainability",
+  "Trading": "trading",
+  "Wealth Management": "wealth management"
+};
+ 
