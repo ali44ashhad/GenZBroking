@@ -140,13 +140,13 @@ const Footer = () => {
 
           {/* --- BOTTOM SECTION --- */}
           <div className="mt-16 pt-8 border-t border-gray-800">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
+            {/* <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
               <p className="text-xs">Copyright © 2025 Spectra Global LTD.</p>
               <div className="flex space-x-6 text-xs">
                 <a href="/forms-&-documents" className="hover:text-white">Legal Forms & Documents</a>
                 <a href="/risk-disclosure" className="hover:text-white">Risk Warnings</a>
               </div>
-            </div>
+            </div> */}
 
             <div className="space-y-6 text-[11px] leading-relaxed text-gray-500">
               <p>
