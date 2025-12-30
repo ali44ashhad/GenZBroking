@@ -68,12 +68,23 @@ export default function ContactHero() {
 
     {/* Content */}
     <div className="relative z-10 flex flex-col items-center space-y-4">
-      <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-emerald-400 uppercase">
-        Keep In Touch
-      </span>
-      <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
-        Contact Us
-      </h1>
+    <span className="text-[10px] sm:text-xs md:text-sm font-bold tracking-[0.2em] text-emerald-400 uppercase">
+  Keep In Touch
+</span>
+
+<h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white tracking-tight">
+  Contact Us
+</h1>
+
+<p className="mt-3 sm:mt-4 md:mt-5 
+  max-w-xs sm:max-w-md md:max-w-xl 
+  text-sm sm:text-base md:text-lg 
+  text-blue-100/80 
+  leading-relaxed sm:leading-relaxed md:leading-loose">
+  Have questions or need assistance? Our team is here to help. Reach out anytime, and we’ll be happy to guide you with prompt and reliable support.
+</p>
+
+
     </div>
   </div>
 

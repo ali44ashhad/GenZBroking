@@ -3,6 +3,8 @@ import withDrawals from './home/withdrawals.webp';
 import freeCustomer from './home/freecustomer.webp';
 import logo from './home/logo.jpeg';
 import genzBookingLogo from './home/genzbrokinglogo.png';
+import promotionBack from './furtherpages/promotionbg.png'
+import formAndDocument from './furtherpages/formanddocument.png'
 
 // home //
 import webTrader from './home/webtrader.png';
@@ -48,6 +50,8 @@ const images = {
     stock,
     logo,
     bitCoin,
+    promotionBack,
+    formAndDocument,
     appleStore,
     window,
     mac,

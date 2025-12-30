@@ -9,8 +9,8 @@ const Company = () => {
  
   return (
     <>
-     <div className="mt-50 relative w-[95%] md:w-[85%] lg:w-[70%] m-auto 
-  min-h-[320px] md:min-h-[400px] lg:min-h-[700px] 
+<div className="mt-50 relative w-[95%] md:w-[85%] lg:w-[70%] m-auto 
+  min-h-[260px] sm:min-h-[300px] md:min-h-[360px] lg:min-h-[420px]
   flex items-center justify-center rounded-2xl overflow-hidden">
 
   {/* Background Image */}
@@ -20,27 +20,34 @@ const Company = () => {
     className="absolute inset-0 w-full h-full object-cover"
   />
 
+  {/* Dark overlay for contrast */}
+  <div className="absolute inset-0 bg-black/40"></div>
+
   {/* Center Content */}
-  <div className="relative z-10 text-center max-w-3xl px-5 md:px-12">
-    <span className="text-emerald-400 uppercase tracking-wider text-xs md:text-base">
+  <div className="relative z-10 text-center max-w-2xl px-4 sm:px-6 md:px-10">
+    
+    <span className="text-emerald-400 uppercase tracking-wider text-[10px] sm:text-xs md:text-sm">
       About Our Company
     </span>
 
-    <h1 className="text-white text-2xl md:text-5xl lg:text-6xl font-bold mt-4">
-      Built for Traders <br /> Driven by Integrity
+    <h1 className="text-white text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mt-2 sm:mt-3 leading-tight">
+      Built for Traders <br className="hidden sm:block" /> Driven by Integrity
     </h1>
 
-    <p className="text-white/80 text-sm md:text-lg mt-4">
+    <p className="text-white/80 text-xs sm:text-sm md:text-base mt-2 sm:mt-3 leading-relaxed">
       We deliver a transparent trading environment supported by advanced technology,
       strong regulation, and a client-first approach.
     </p>
 
-    <button className="mt-6 px-7 py-3 bg-white text-[#0B1441] font-semibold 
+    <button className="mt-4 sm:mt-5 px-5 sm:px-6 py-2 sm:py-2.5 
+      bg-white text-[#0B1441] text-sm sm:text-base font-semibold 
       rounded-full hover:bg-gray-200 transition-all duration-300">
       Start Your Journey
     </button>
+
   </div>
 </div>
+
 
 
 

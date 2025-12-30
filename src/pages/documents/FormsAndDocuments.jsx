@@ -2,16 +2,27 @@ import React from 'react'
 import { links } from '../../data/data'
 import { ArrowUpRight } from 'lucide-react';
 import Fund from '../../components/Fund';
+import images from '../../assets/images';
 
 const FormsAndDocuments = () => {
   return (
     <>
-        <div className="my-20 flex items-center justify-center pt-20 md:pt-40 px-4">
+       <div className="my-20 flex items-center justify-center pt-20 md:pt-40 px-4">
   {/* Main Container */}
-  <div className="w-full max-w-6xl overflow-hidden rounded-[2rem] md:rounded-[2.5rem] bg-gradient-to-br from-[#003B95] via-[#001A4D] to-[#050B18] px-6 py-16 md:py-24 text-center shadow-2xl">
-    
+  <div className="relative w-full max-w-6xl overflow-hidden rounded-[2rem] md:rounded-[2.5rem] px-6 py-16 md:py-24 text-center shadow-2xl">
+
+    {/* Background Image */}
+    <img
+      src={images.formAndDocument}
+      alt="Trading Background"
+      className="absolute inset-0 w-full h-full object-cover"
+    />
+
+    {/* Dark Overlay for readability */}
+    <div className="absolute inset-0 bg-black/30"></div>
+
     {/* Content Wrapper */}
-    <div className="max-w-xl md:max-w-2xl mx-auto flex flex-col items-center">
+    <div className="relative max-w-xl md:max-w-2xl mx-auto flex flex-col items-center z-10">
       
       {/* Subheading Label */}
       <span className="text-[9px] sm:text-[10px] md:text-xs font-bold tracking-[0.15em] md:tracking-[0.2em] text-emerald-400 uppercase mb-3 md:mb-4">
