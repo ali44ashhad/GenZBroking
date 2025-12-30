@@ -11,7 +11,7 @@ import {
 
 } from "lucide-react"
 import Fund from "../../components/Fund";
- 
+import images from "../../assets/images";
 
 
 const downloadOptions = [
@@ -42,12 +42,12 @@ export default function MetaTrading() {
 
           {/* Main Title */}
           <h2 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">
-            SGFX Powered by MetaTrader 5
+            GenZBroking Powered by MetaTrader 5
           </h2>
 
           {/* Description */}
           <p className="text-slate-300 text-xs md:text-base mb-8 max-w-xl mx-auto leading-relaxed">
-            Experience next-level multi-asset trading with SGFX,
+            Experience next-level multi-asset trading with GenZBroking,
             powered by MetaTrader 5.
           </p>
 
@@ -100,58 +100,85 @@ export default function MetaTrading() {
         </div>
 
         {/* Toggle Navigation */}
-        <div className="flex justify-center mb-10">
-          <div className="inline-flex bg-white border border-gray-100 rounded-full p-1 shadow-sm">
-            {tabs.map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                  activeTab === tab
-                    ? 'bg-black text-white'
-                    : 'text-gray-500 hover:text-black'
-                }`}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
-        </div>
+      <div className="flex justify-center mb-10">
+  <div className="inline-flex flex-nowrap bg-white border border-gray-100 rounded-full shadow-sm">
+    {tabs.map((tab) => (
+      <button
+        key={tab}
+        onClick={() => setActiveTab(tab)}
+        className={`px-2 sm:px-4 md:px-6 py-1.5 sm:py-2 rounded-full 
+        text-[11px] sm:text-sm font-medium transition-all duration-300 
+        ${
+          activeTab === tab
+            ? "bg-black text-white"
+            : "text-gray-500 hover:text-black"
+        }`}
+      >
+        {tab}
+      </button>
+    ))}
+  </div>
+</div>
+
+
 
         {/* Data Table Container */}
-        <div className="bg-white border border-gray-100 rounded-[30px] p-6 md:p-10 shadow-sm h-auto">
-          <div className="grid grid-cols-4 text-[10px] md:text-xs font-bold text-gray-900 uppercase tracking-widest mb-8">
-            <div className="text-left">Instrument</div>
-            <div className="text-center">Buy</div>
-            <div className="text-center">Sell</div>
-            <div className="text-right">Change</div>
-          </div>
+      <div className="bg-white border border-gray-100 rounded-[30px] p-3 sm:p-4 md:p-10 shadow-sm h-auto">
+  
+  <div className="grid grid-cols-4 items-center 
+                  text-[9px] sm:text-[10px] md:text-xs 
+                  font-bold text-gray-900 uppercase 
+                  tracking-wider mb-4 md:mb-8 
+                  whitespace-nowrap">
+    <div className="text-left">Instrument</div>
+    <div className="text-center">Buy</div>
+    <div className="text-center">Sell</div>
+    <div className="text-right">Change</div>
+  </div>
 
-         
-        </div>
+</div>
+
 
       </div>
     </div>
 
 
   {/* TOP FEATURE BAR */}
-        <div className="w-7xl m-auto my-10 bg-gradient-to-r from-[#5145f6] via-[#3b82f6] to-[#10b981] rounded-2xl p-5 md:p-6 shadow-xl">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { icon: "💸", text: "Instant Withdrawals" },
-              { icon: "🛡️", text: "Swap-Free**" },
-              { icon: "👤", text: "Tier-1 Client Fund Security" },
-              { icon: "🤝", text: "Professional Customer Support" }
-            ].map((item, index) => (
-              <div key={index} className="flex items-center gap-4 text-white">
-                <div className="flex-shrink-0 w-12 h-12 border border-white/30 rounded-xl flex items-center justify-center bg-white/10 backdrop-blur-md">
-                  <span className="text-xl">{item.icon}</span>
-                </div>
-                <span className="font-bold text-sm leading-snug">{item.text}</span>
-              </div>
-            ))}
+     <div className="max-w-7xl mx-auto my-8 px-4 sm:px-6">
+  <div className="bg-gradient-to-r from-[#5145f6] via-[#3b82f6] to-[#10b981] 
+                  rounded-2xl p-5 sm:p-6 md:p-8 shadow-xl">
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {[
+        { icon: "💸", text: "Instant Withdrawals" },
+        { icon: "🛡️", text: "Swap-Free**" },
+        { icon: "👤", text: "Tier-1 Client Fund Security" },
+        { icon: "🤝", text: "Professional Customer Support" },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="flex items-center gap-4 text-white"
+        >
+          {/* ICON */}
+          <div className="flex-shrink-0 w-11 h-11 sm:w-12 sm:h-12 
+                          border border-white/30 rounded-xl 
+                          flex items-center justify-center 
+                          bg-white/10 backdrop-blur-md">
+            <span className="text-lg sm:text-xl">{item.icon}</span>
           </div>
+
+          {/* TEXT */}
+          <span className="font-bold text-sm sm:text-base leading-snug">
+            {item.text}
+          </span>
         </div>
+      ))}
+    </div>
+
+  </div>
+</div>
+
+
 
 
         {/* fourth section */}
@@ -162,30 +189,30 @@ export default function MetaTrading() {
           {/* Left Content */}
           <div className="md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Trade with SGFX on MetaTrader 5 Platform
-            </h2>
-            
-            <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-              MetaTrader 5 (MT5) is a leading, multi-asset trading solution trusted worldwide. 
-              It combines high-speed performance with professional-grade strategic tools, ideal 
-              for beginners and advanced users.
-            </p>
-            
-            <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-              With MT5, you can experiment with advanced technical indicators, in-depth fundamental 
-              analysis, and customizable charting. Streamline your trading strategy with Expert 
-              Advisors and trading robots, for the ideal mix of precision and flexibility.
-            </p>
-            
-            <button className="bg-blue-600 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-              Open Live Account
-            </button>
+  Experience Advanced Trading with GenZBroking on MetaTrader 5
+</h2>
+
+<p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+  MetaTrader 5 (MT5) delivers a powerful multi-asset trading environment designed for precision,
+  speed, and reliability. Trusted by traders worldwide, MT5 supports advanced execution,
+  real-time pricing, and deep market insights.
+</p>
+
+<p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+  With GenZBroking on MT5, access sophisticated charting tools, automated trading systems, and
+  comprehensive analytics to manage risk efficiently and trade confidently across global markets.
+</p>
+
+<button className="bg-blue-600 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+  Start Trading Now
+</button>
+
           </div>
           
           {/* Right Image */}
           <div className="md:w-1/2 flex justify-center md:justify-end">
             <img 
-              src=""
+              src={images.metaTrader5}
               alt="MetaTrader 5 Platform" 
               className="w-full max-w-md rounded-xl shadow-md object-cover"
             />
@@ -204,20 +231,21 @@ export default function MetaTrading() {
           {/* Left Content */}
           <div className="md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Trade with SGFX on MetaTrader 5 Platform
-            </h2>
+  Trade Confidently with GenZBroking on MetaTrader 5
+</h2>
 
-            <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-              MetaTrader 5 (MT5) is a leading, multi-asset trading solution trusted worldwide. 
-              It combines high-speed performance with professional-grade strategic tools, ideal 
-              for beginners and advanced users.
-            </p>
+<p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+  MetaTrader 5 (MT5) is a powerful multi-asset trading platform built to support fast execution,
+  real-time pricing, and advanced market analysis. Designed for traders of all experience levels,
+  MT5 delivers reliability, precision, and flexibility.
+</p>
 
-            <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-8">
-              With MT5, you can experiment with advanced technical indicators, in-depth fundamental 
-              analysis, and customizable charting. Streamline your trading strategy with Expert 
-              Advisors and trading robots, for the ideal mix of precision and flexibility.
-            </p>
+<p className="text-gray-700 text-base md:text-lg leading-relaxed mb-8">
+  With GenZBroking on MT5, access sophisticated charting tools, automated trading strategies, and
+  comprehensive analytical features. Optimize your trading performance with intelligent tools
+  that adapt to dynamic global market conditions.
+</p>
+
 
             {/* Download Blocks */}
             <div className="grid grid-cols-2 gap-4 max-w-sm">
@@ -237,7 +265,7 @@ export default function MetaTrading() {
           {/* Right Image */}
           <div className="md:w-1/2 flex justify-center md:justify-end">
             <img 
-              src=""
+              src={images.mobileTrader  }
               alt="MetaTrader 5 Platform" 
               className="w-full max-w-md rounded-xl shadow-md object-cover"
             />

@@ -32,19 +32,19 @@ const MarketTechnical = () => {
 
         {/* Content Layer */}
         <div className="relative z-10 max-w-3xl">
-             <span className="font-semibold text-green-300">
-    Real-Time Market Technical Analysis with SGFX
-  </span>
-          <h2 className="text-white text-2xl md:text-3xl font-bold mb-3">
-  Data-Driven Trading Insights
+          <span className="font-semibold text-green-300">
+  Real-Time Market Analysis Powered by GenZBroking
+</span>
+
+<h2 className="text-white text-2xl md:text-3xl font-bold mb-3">
+  Actionable Trading Insights
 </h2>
 
-
 <p className="text-gray-300 text-base max-w-4xl leading-relaxed">
-  At SGFX, our advanced technical analysis tool provides traders with real-time data
-  and expert-level insights. Whatever your next move, our platform delivers the clarity
-  you need right when you need it. Backed by years of market expertise, SGFX gives you
-  the confidence to make smarter, faster investment decisions.
+  GenZBroking delivers cutting-edge technical analysis and live market data, giving traders 
+  instant insights to guide every decision. With our platform, you gain the tools and 
+  confidence to act decisively, optimize strategies, and stay ahead in dynamic markets. 
+  Trade smarter, faster, and with clarity.
 </p>
 
         </div>
@@ -59,19 +59,19 @@ const MarketTechnical = () => {
         <div className="w-full max-w-6xl mx-auto mt-10 md:p-8">
       {/* Heading and Description Section */}
       <div className="mb-8">
-        <h2 className="text-gray-900 text-2xl md:text-3xl font-bold mb-3">
-          Live Data to Navigate Volatility
+       <h2 className="px-5 text-gray-900 text-2xl md:text-3xl font-bold mb-3">
+  Real-Time Data for Smarter Trading
+</h2>
+<p className="px-5 text-gray-600 text-base max-w-4xl leading-relaxed">
+  In fast-moving markets, timely and accurate data is essential. GenZBroking’s live technical 
+  analysis table provides a clear snapshot of market trends, helping you identify optimal 
+  entry and exit points and react confidently as market conditions evolve.
+</p>
 
-        </h2>
-        <p className="text-gray-600 text-base max-w-4xl leading-relaxed">
-          When markets shift quickly, having access to reliable, real-time data makes all the difference. 
-          The SGFX live technical analysis table gives you a clear view of market movement, helping you recognize 
-          key entry and exit points and respond with precision, just as conditions change.
-        </p>
       </div>
 
       {/* Widget Container */}
-      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+      <div className="  bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
         <iframe
           src="https://fxpricing.com/fx-widget/simple-moving-widget.php?id=1"
           width="100%"

@@ -10,19 +10,20 @@ const BlogNextSection = () => {
         <div className="max-w-2xl mx-auto flex flex-col items-center">
           
           {/* Subheading Label */}
-          <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-emerald-400 uppercase mb-4">
-            Stay Ahead of the Market
-          </span>
+         <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-emerald-400 uppercase mb-4">
+  Stay Informed & Ahead
+</span>
 
-          {/* Main Title */}
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            Subscribe for the Latest Trading News
-          </h2>
+{/* Main Title */}
+<h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+  Sign Up for Real-Time Trading Updates
+</h2>
 
-          {/* Description */}
-          <p className="text-blue-100/70 text-sm md:text-base mb-10 max-w-lg">
-            Get expert insights, market news, and updates straight to your inbox.
-          </p>
+{/* Description */}
+<p className="text-blue-100/70 text-sm md:text-base mb-10 max-w-lg">
+  Receive the latest market news, expert analysis, and trading insights directly in your inbox, keeping you ahead of market movements.
+</p>
+    
 
           {/* Form Section */}
           <form className="w-full max-w-md flex flex-col gap-4" onSubmit={(e) => e.preventDefault()}>

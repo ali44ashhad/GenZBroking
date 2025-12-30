@@ -58,14 +58,16 @@ const Regulation = () => {
           {/* Content Layer */}
           <div className="relative z-10 flex flex-col items-center justify-center space-y-4">
             <span className="text-xs md:text-sm font-bold tracking-[0.3em] text-emerald-400 uppercase">
-              OUR COMPANY
-            </span>
-            <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
-              Regulation & Licenses
-            </h1>
-               <p className="text-blue-50 text-base md:text-lg font-medium">
-                SGFX is a brand name of <span className="text-emerald-300 font-bold">Spectra Global LTD (Mauritius)</span>
-              </p>
+  OUR COMPANY
+</span>
+<h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
+  Regulated & Licensed Globally
+</h1>
+<p className="text-blue-50 text-base md:text-lg font-medium">
+  GenZBroking operates under <span className="text-emerald-300 font-bold">Spectra Global LTD (Mauritius)</span>, 
+  fully licensed and regulated to provide a secure and transparent trading environment.
+</p>
+
           </div>
         </div>
       </div>
@@ -112,21 +114,20 @@ const Regulation = () => {
             />
           </div>
           <div>
-            <span className="text-[#2DD4BF] font-bold text-xs tracking-widest uppercase">SGFX</span>
+            <span className="text-[#2DD4BF] font-bold text-xs tracking-widest uppercase">GenZBroking</span>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Legal Information</h2>
           </div>
         </div>
         
-        <p className="text-gray-500 leading-relaxed text-sm md:text-base">
-          Regulations SGFX brand under Spectra Global LTD is regulated financial services provider, 
-          committed to maintaining the highest standards of transparency, integrity, and client 
-          protection. United Arab Emirates Spectra Global LTD is licensed by the Securities and 
-          Commodities Authority (SCA) in the United Arab Emirates, reinforced our commitment 
-          to compliance and agricultural capital organization. SCA License Number: 20200000307 
-          Mauritius Spectra Global LTD (MU) is authorized by the Financial Services Commission 
-          (FSC) of the Republic of Mauritius as an Investment Dealer. Company Registration 
-          Number: 199453 License Number: GB22201302
-        </p>
+      <p className="text-gray-500 leading-relaxed text-sm md:text-base">
+  GenZBroking, operating under <span className="font-bold">Spectra Global LTD</span>, is a fully regulated financial 
+  services provider committed to transparency, integrity, and client protection. In the United Arab Emirates, Spectra 
+  Global LTD is licensed by the Securities and Commodities Authority (SCA), demonstrating our dedication to compliance and 
+  secure capital management (SCA License Number: 20200000307). In Mauritius, Spectra Global LTD is authorized by the Financial 
+  Services Commission (FSC) as an Investment Dealer, ensuring reliable and compliant investment services (Company Registration Number:
+   199453, License Number: GB22201302).
+</p>
+
       </div>
 
       {/* --- LOWER SECTION: Trade Banner --- */}
@@ -149,25 +150,26 @@ const Regulation = () => {
 
   {/* Heading Block */}
   <div className="max-w-xl">
-    <span className="text-[#2DD4BF] font-semibold 
+   <span className="text-[#2DD4BF] font-semibold 
       text-[10px] sm:text-xs md:text-sm 
       tracking-widest uppercase">
-      Where Trust Matters.
-    </span>
-
-    <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl 
+  Trusted by Traders Worldwide
+</span>
+<h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl 
       font-bold mt-2 leading-tight">
-      Trade With A Reliable Broker
-    </h1>
+  Trade with Confidence and Security
+</h1>
+
   </div>
 
   {/* Description */}
-  <p className="text-gray-200 max-w-md 
-    text-sm sm:text-base md:text-lg 
-    leading-relaxed">
-    SGFX offers an extensive range of products and services,
-    providing a top-notch trading experience.
-  </p>
+  
+<p className="text-gray-200 max-w-md 
+      text-sm sm:text-base md:text-lg 
+      leading-relaxed">
+  GenZBroking delivers a comprehensive suite of trading instruments and services, 
+  ensuring a seamless, reliable, and professional trading experience.
+</p>
 
   {/* CTA */}
   <div className="pt-3 sm:pt-4">
@@ -178,7 +180,7 @@ const Regulation = () => {
       rounded-lg 
       hover:bg-white hover:text-blue-900 
       transition-all duration-300">
-      Read more about SGFX
+      Read more about GenZBroking
     </button>
   </div>
 </div>

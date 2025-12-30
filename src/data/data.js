@@ -53,7 +53,7 @@ export const features = [
     },
     Stocks: {
       title: "Trade Popular Global Stocks with Speed and Simplicity",
-      desc: "Access shares from top companies like Apple, Tesla, Amazon, and more. With SGFX, stock CFD trading is intuitive, fast, and flexible, enabling you to go long or short with ease.",
+      desc: "Access shares from top companies like Apple, Tesla, Amazon, and more. With GenZBroking, stock CFD trading is intuitive, fast, and flexible, enabling you to go long or short with ease.",
       image: images.stock ,
     },
     Crypto: {
@@ -101,21 +101,21 @@ export const cards = [
 export const CompanyData = [
   {
     title: "Variable",
-    subtitle: "Spread Type",
+    subtitle: "Spreads to Match Market Conditions",
     icon: "LayoutGrid",
     gradient: "from-blue-800 to-indigo-600",
     height: "h-64",
   },
   {
-    title: "1000+",
-    subtitle: "Trading instruments",
+    title: "300+",
+    subtitle: "Global Trading Instruments",
     icon: "Coins",
     gradient: "from-teal-600 to-emerald-500",
     height: "h-80",
   },
   {
-    title: "12 ms",
-    subtitle: "Avg. execution time under",
+    title: "10 ms",
+    subtitle: "Average Execution Speed",
     icon: "RefreshCw",
     gradient: "from-cyan-500 to-blue-500",
     height: "h-40",
@@ -124,59 +124,59 @@ export const CompanyData = [
 
 
 export const testimonials = [
-    {
-      text: "I've been using SGFX for a few months now, and I'm genuinely impressed. Reliable service, fast withdrawals, and top-notch customer support exactly what I need in a broker.",
-      name: "Christopher",
-      location: "London, UK",
-      initials: "C",
-      img: "https://i.pravatar.cc/150?u=chris" // Placeholder for the profile image
-    },
-    {
-      text: "SGFX has been a great trading partner so far. They respond quickly and are always helpful when it comes to queries. Definitely worth recommending to fellow traders in Dubai.",
-      name: "Sabbath",
-      location: "Nairobi, Kenya",
-      initials: "S",
-    },
-    {
-      text: "After trying multiple brokers over the years, SGFX truly stands out. The team has made funding and withdrawals incredibly smooth, and their support takes a huge load off my mind. Big shoutout to the SGFX team!.",
-      name: "Anthony",
-      location: "Kuala Lumpur, Malaysia",
-      initials: "A",
-    },
-    {
-      text: "Just started using SGFX last month and already impressed! They processed my withdrawal faster than any broker I've worked with. Trustworthy and efficient that's rare.",
-      name: "Karo",
-      location: "Dubai, UAE",
-      initials: "K",
-    },
-    {
-      text: "From day one, SGFX made everything simple. Onboarding was seamless, and their support team is always on point both for deposits and withdrawals. Highly recommend for anyone trading from Mauritius",
-      name: "Jonah",
-      location: "Port Louis, Mauritius",
-      initials: "J",
-    },
-  ];
+  {
+    text: "GenZBroking has transformed the way I trade. Execution is fast, support is always responsive, and managing my account has never been easier. Highly reliable broker.",
+    name: "Christopher",
+    location: "London, UK",
+    initials: "C",
+    img: "https://i.pravatar.cc/150?u=chris"
+  },
+  {
+    text: "Trading with GenZBroking is seamless. Their platform is intuitive, and I get fast answers to my questions every time. A broker I can truly trust.",
+    name: "Sabbath",
+    location: "Nairobi, Kenya",
+    initials: "S",
+  },
+  {
+    text: "After using multiple brokers, GenZBroking stands out for their transparency and speed. Deposits, withdrawals, and support are all handled professionally. Very impressed.",
+    name: "Anthony",
+    location: "Kuala Lumpur, Malaysia",
+    initials: "A",
+  },
+  {
+    text: "I recently switched to GenZBroking and the experience has been excellent. Quick processing, reliable service, and a user-friendly platform make trading a pleasure.",
+    name: "Karo",
+    location: "Dubai, UAE",
+    initials: "K",
+  },
+  {
+    text: "GenZBroking offers a secure and straightforward trading environment. From the first day, everything was smooth — account setup, funding, and support. Highly recommended.",
+    name: "Jonah",
+    location: "Port Louis, Mauritius",
+    initials: "J",
+  },
+];
 
-  export  const bonuses = [
-    {
-      title: "100% Deposit Bonus",
-      subtitle: "upto $25,000",
-      icon: "💰",
-      buttonText: "DEPOSIT NOW",
-    },
-    {
-      title: "Refer your friend &",
-      subtitle: "Earn $100 Free",
-      icon: "👥",
-      buttonText: "REFER NOW",
-    },
-    {
-      title: "Maximize Profits with",
-      subtitle: "Swap-Free Trading",
-      icon: "🛡️",
-      buttonText: "DEPOSIT NOW",
-    },
-  ];
+   export const bonuses = [
+  {
+    title: "Welcome Deposit Bonus",
+    subtitle: "Up to $20,000",
+    icon: "🎉",
+    buttonText: "CLAIM BONUS",
+  },
+  {
+    title: "Invite Friends &",
+    subtitle: "Get $150 Reward",
+    icon: "🤝",
+    buttonText: "INVITE NOW",
+  },
+  {
+    title: "Enjoy",
+    subtitle: "Zero-Swap Trading",
+    icon: "⚡",
+    buttonText: "START TRADING",
+  },
+];
 
 
 
@@ -406,7 +406,7 @@ export const cryptoData = [
 
 export const featureCards = [
   {
-    title: "Trade On SGFX",
+    title: "Trade On GenZBroking",
     icon: Activity,
     items: [
       "12ms Avg. execution time",
@@ -414,10 +414,10 @@ export const featureCards = [
       "23 Analytical objects",
       "30 Technical indicators",
     ],
-    button: "Read more about SGFX",
+    button: "Read more about GenZBroking",
   },
   {
-    title: "Why SGFX?",
+    title: "Why GenZBroking?",
     icon: Globe,
     items: [
       "Years of Group Excellence",
@@ -441,10 +441,10 @@ export const featureCards = [
 
 
 export const installationStepsData = [
-  { id: 1, title: 'Download MT5 from the SGFX Website' },
+  { id: 1, title: 'Download MT5 from the GenZBroking Website' },
   { id: 2, title: 'Open the Installer' },
   { id: 3, title: 'Agree to the Terms' },
-  { id: 4, title: 'Log Into Your SGFX Account' },
+  { id: 4, title: 'Log Into Your GenZBroking Account' },
   { id: 5, title: 'Take a Moment to Explore' },
 ];
 

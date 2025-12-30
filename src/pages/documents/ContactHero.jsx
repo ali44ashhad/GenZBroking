@@ -116,7 +116,7 @@ export default function ContactHero() {
               </div>
               <div>
                 <p className="font-bold text-slate-900">Mail</p>
-                <p className="text-slate-500">support@sgfx.com</p>
+                <p className="text-slate-500">support@GenZBroking.com</p>
               </div>
             </div>
 
@@ -184,7 +184,7 @@ export default function ContactHero() {
             <div className="flex items-center gap-3">
               <input type="checkbox" id="terms" className="w-5 h-5 rounded border-gray-300 text-teal-500 focus:ring-teal-500" />
               <label htmlFor="terms" className="text-sm text-slate-500">
-                I agree to receive communications from SGFX.*
+                I agree to receive communications from GenZBroking.*
               </label>
             </div>
 

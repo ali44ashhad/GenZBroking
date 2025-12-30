@@ -11,14 +11,16 @@ const ExploreTrading = () => {
       <div className="max-w-6xl mx-auto text-center">
         {/* Header Section */}
         <p className="text-emerald-500 font-bold tracking-widest text-xs mb-4 uppercase">
-          Regulated. Trusted. Transparent.
-        </p>
-        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-          Explore our Trading conditions effortlessly
-        </h1>
-        <p className="text-slate-500 text-lg mb-12 max-w-2xl mx-auto">
-          Fast execution, tight spreads and a choice of account types for every trading style.
-        </p>
+  Secure. Regulated. Reliable.
+</p>
+<h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
+  Trading Conditions Designed for Performance
+</h1>
+<p className="text-slate-500 text-lg mb-12 max-w-2xl mx-auto">
+  Benefit from competitive pricing, fast execution, and flexible account options
+  built to support traders at every level.
+</p>
+
 
         {/* Cards Grid */}
         <div className="flex flex-col md:flex-row items-center md:items-end justify-center gap-6 mb-16">

@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
@@ -28,8 +29,20 @@ import Product from './pages/tradings/Products'
 import InstallationMeta from './pages/tradings/InstallationMeta'
 import ScrollToTop from './components/ScrollToTop'
 import News from './pages/news/News'
+import Loader from './pages/company/Loader'
 
 function App() {
+const [loading, setLoading] = useState(true); 
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setData(true)
+      setLoading(false); 
+    }, 1000);
+  }, []);
+
+  if (loading) return <Loader/>;
   return (
     <>
      <ScrollToTop/>

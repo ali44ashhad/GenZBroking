@@ -16,19 +16,20 @@ const Promotions = () => {
       {/* Subheading */}
       <span className="text-[10px] md:text-xs font-semibold tracking-[0.18em] 
         text-emerald-400 uppercase mb-3">
-        Promotions
-      </span>
+  Special Offers
+</span>
 
-      {/* Title */}
-      <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 leading-tight">
-        Get More from Your Trades
-      </h2>
+{/* Title */}
+<h2 className="text-2xl md:text-4xl font-bold text-white mb-4 leading-tight">
+  Maximize Your Trading Benefits
+</h2>
 
-      {/* Description */}
-      <p className="text-blue-100/70 text-sm md:text-base max-w-md">
-        Boost your trading with our Promotions and Bonuses, designed to give
-        you an edge in today’s fast-moving markets.
-      </p>
+{/* Description */}
+<p className="text-blue-100/70 text-sm md:text-base max-w-md">
+  Take advantage of our exclusive promotions and bonus programs, crafted to give you 
+  more opportunities and an edge in today’s dynamic markets.
+</p>
+
 
     </div>
   </div>

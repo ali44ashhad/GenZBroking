@@ -1,9 +1,9 @@
 import React from 'react'
 
-const SGFXtraders = () => {
+const GenZBrokingtraders = () => {
   return (
-    <div>SGFXtraders</div>
+    <div>GenZBrokingtraders</div>
   )
 }
 
-export default SGFXtraders
+export default GenZBrokingtraders

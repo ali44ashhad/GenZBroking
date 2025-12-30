@@ -27,63 +27,69 @@ const GlobalTradingData = () => {
         
         {/* Header Content inside the Card */}
         <div className="mb-8">
-          <div className="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-wider text-blue-600 uppercase bg-blue-200/50 rounded-full">
-            Trading Calendar
-          </div>
-          <h1 className="mb-6 text-3xl md:text-5xl font-extrabold text-[#1E293B] leading-tight">
-            Exchange Holidays 2025: <span className="text-blue-600">Plan Ahead</span> for Market Closures
-          </h1>
-          <p className="text-lg text-slate-600 leading-relaxed italic border-l-4 border-blue-500 pl-6 pb-2">
-            "Missing a trade because you didn’t check the calendar? That’s avoidable. With SGFX’s dynamic, up-to-date view of holiday trading hours, you’ll know exactly when the markets are closed and when they’re closing early. The list includes major countries and regions, so you can plan ahead, stay consistent, and avoid unnecessary surprises. Stay informed, plan ahead and avoid interruptions in your trading strategy with SGFX."
-          </p>
+         <div className="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-wider text-blue-600 uppercase bg-blue-200/50 rounded-full">
+  Trading Calendar
+</div>
+
+<h1 className="mb-6 text-3xl md:text-5xl font-extrabold text-[#1E293B] leading-tight">
+  2025 Market Closures: <span className="text-blue-600">Never Miss a Trading Day</span>
+</h1>
+
+<p className="text-lg text-slate-600 leading-relaxed italic border-l-4 border-blue-500 pl-6 pb-2">
+  "Avoid missing trades due to unexpected market closures. GenZBroking’s comprehensive 2025 trading 
+  calendar gives you an up-to-date overview of holiday hours across major global markets. 
+  Plan your trading strategy with confidence, stay consistent, and eliminate surprises. 
+  With GenZBroking, you’ll always know when markets are open, closing early, or closed for holidays."
+</p>
+
         </div>
 
-        {/* Scrollable Table Section */}
-        <div className="bg-white rounded-2xl shadow-inner overflow-auto max-h-[550px] border border-slate-300 custom-scrollbar">
-          <table className="w-full text-center border-separate border-spacing-0 min-w-[1200px]">
-            <thead className="sticky top-0 z-30">
-              <tr className="bg-[#1E293B] text-white">
-                {headers.map((header, idx) => (
-                  <th 
-                    key={idx} 
-                    className={`py-5 px-6 text-[11px] uppercase tracking-wider font-bold border-b border-slate-700 
-                      ${idx === 0 ? 'sticky left-0 z-40 bg-[#1E293B]' : ''}`}
-                  >
-                    {header}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody className="text-gray-700">
-              {scheduleData.map((row, rowIndex) => (
-                <tr key={rowIndex} className="hover:bg-blue-50/50 transition-colors group">
-                  {/* Sticky Country Column */}
-                  <td className="py-4 px-6 font-bold text-xs border-b border-r border-slate-100 bg-white sticky left-0 z-20 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.1)] group-hover:bg-blue-50 transition-colors">
-                    {row.country}
-                  </td>
+    {/* Scrollable Table Section */}
+<div className="bg-white rounded-2xl shadow-inner overflow-x-auto max-h-[550px] border border-slate-300 custom-scrollbar">
+  <table className="w-full text-center border-separate border-spacing-0 min-w-[800px] md:min-w-[1200px]">
+    <thead className="sticky top-0 z-30">
+      <tr className="bg-[#1E293B] text-white">
+        {headers.map((header, idx) => (
+          <th
+            key={idx}
+            className={`py-5 px-4 text-[11px] uppercase tracking-wider font-bold border-b border-slate-700
+              ${idx === 0 ? 'sticky left-0 z-40 bg-[#1E293B]' : ''}`}
+          >
+            {header}
+          </th>
+        ))}
+      </tr>
+    </thead>
+    <tbody className="text-gray-700">
+      {scheduleData.map((row, rowIndex) => (
+        <tr key={rowIndex} className="hover:bg-blue-50/50 transition-colors group">
+          {/* Sticky Country Column */}
+          <td className="py-4 px-4 font-bold text-xs border-b border-r border-slate-100 bg-white sticky left-0 z-20 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.1)] group-hover:bg-blue-50 transition-colors">
+            {row.country}
+          </td>
 
-                  {/* Data Cells */}
-                  {row.values.map((val, colIndex) => {
-                    const isNoTrading = val === "No Trading";
-                    const highlighted = isHighlightedColumn(colIndex + 1);
-                    
-                    return (
-                      <td 
-                        key={colIndex} 
-                        className={`py-4 px-4 text-xs border-b border-r border-slate-100 last:border-r-0
-                          ${highlighted ? 'bg-red-50/40' : ''}`}
-                      >
-                        <span className={isNoTrading ? "text-red-600 font-bold" : "text-gray-500"}>
-                          {val}
-                        </span>
-                      </td>
-                    );
-                  })}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+          {/* Data Cells */}
+          {row.values.map((val, colIndex) => {
+            const isNoTrading = val === "No Trading";
+            const highlighted = isHighlightedColumn(colIndex + 1);
+
+            return (
+              <td
+                key={colIndex}
+                className={`py-4 px-2 text-xs border-b border-r border-slate-100 last:border-r-0
+                  ${highlighted ? 'bg-red-50/40' : ''} text-ellipsis truncate max-w-[80px] md:max-w-[150px]`}
+              >
+                <span className={isNoTrading ? "text-red-600 font-bold" : "text-gray-500"}>
+                  {val}
+                </span>
+              </td>
+            );
+          })}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
 
         {/* Footer Notes inside the Card */}
         <div className="mt-8 p-6 bg-white/50 rounded-xl border border-slate-200 space-y-3 text-sm text-slate-500">

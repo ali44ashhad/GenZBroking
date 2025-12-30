@@ -32,12 +32,12 @@ const InstallationMeta = () => {
 
         {/* Main Heading */}
         <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-8">
-          SGFX Trading Insights and Learning
+          GenZBroking Trading Insights and Learning
         </h1>
 
         {/* Description */}
         <p className="text-sm md:text-base text-blue-100/80 leading-relaxed font-light">
-          Explore the SGFX Blog for expert insights and analysis on futures,
+          Explore the GenZBroking Blog for expert insights and analysis on futures,
           indices, stocks, currencies, CFDs, and Forex. Stay informed and ahead
           in the financial markets with our categorized content.
         </p>
@@ -47,140 +47,125 @@ const InstallationMeta = () => {
 
 
 
-<div className="w-7xl m-auto rounded-[40px] my-20 min-h-screen bg-gray-50 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8 font-sans antialiased">
-      <div className="max-w-3xl w-full">
-        
-        {/* Header Section */}
-        <header className="mb-10">
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8">
-            How to download and install MetaTrader 5
-          </h1>
-          <h2 className="text-xl font-bold text-gray-800 mb-4">
-            MT5 download and installation instructions
-          </h2>
-          <div className="space-y-4 text-gray-500 leading-relaxed text-[17px]">
-            <p>
-              Installing software isn't usually exciting, but if you're looking to trade globally with SGFX, you'll need MetaTrader 5 set up first. The good news? It's not too complicated, and once it's installed, the platform is solid, reliable, and easy to use. This guide will walk you through it without assuming you've done this before.
-            </p>
-            <p>
-              If you've already used MetaTrader on another broker's platform, this will feel familiar. If not, no problem, just take it one step at a time.
-            </p>
-          </div>
-        </header>
+<div className="w-full max-w-7xl mx-auto rounded-[2.5rem] my-20 bg-gray-50 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8 font-sans antialiased">
+  <div className="max-w-3xl w-full">
 
-        {/* Stepper Section */}
-        <div className="flex flex-col items-start mb-10">
-          {installationStepsData.map((step, index) => (
-            <div key={step.id} className="flex flex-col">
-              {/* Row: Number Box + Text */}
-              <div className="flex items-center">
-                {/* Numbered Box */}
-                <div className="w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0 flex items-center justify-center bg-[#16B9AA] text-white font-bold rounded-xl text-lg sm:text-xl shadow-sm">
-                  {step.id}
-                </div>
-                {/* Step Text */}
-                <h3 className="ml-6 text-base sm:text-lg font-bold text-gray-800">
-                  {step.title}
-                </h3>
-              </div>
-              
-              {/* Connector Line - Directly below the block */}
-              {index !== installationStepsData.length - 1 && (
-                <div className="w-12 sm:w-16 flex justify-center">
-                  {/* h-8 controls the vertical gap between blocks */}
-                  <div className="h-8 border-l-2 border-dotted border-[#16B9AA]"></div>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-
-        {/* Info List Section */}
-        <div className="mb-10">
-          <p className="font-bold text-gray-900 mb-4 text-[17px]">A few things to look for:</p>
-          <ul className="space-y-3 text-gray-600 text-[17px]">
-            <li className="flex items-start">
-              <span className="mr-3 text-gray-400">•</span>
-              <span>
-                <span className="font-bold text-gray-800">Market Watch window:</span> This is where you see current prices
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-3 text-gray-400">•</span>
-              <span>
-                <span className="font-bold text-gray-800">Navigator:</span> This lets you access your account and indicators
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-3 text-gray-400">•</span>
-              <span>
-                <span className="font-bold text-gray-800">Terminal:</span> This shows trades, balance, and alerts
-              </span>
-            </li>
-          </ul>
-          <p className="mt-4 text-gray-500 italic text-[16px]">
-            You don't need to memorize anything today. Just get a feel for it
-          </p>
-        </div>
-
-        {/* Download Buttons Section */}
-        <div className="flex flex-wrap gap-4 mt-8">
-          <button className="flex items-center gap-3 bg-black text-white px-5 py-2.5 rounded-lg hover:bg-gray-800 transition-colors">
-            {/* Replace with actual SVG icons if available */}
-            <div className="w-5 h-5 bg-white/20 rounded-sm"></div>
-            <div className="text-left">
-              <p className="text-[10px] uppercase leading-none">Download on the</p>
-              <p className="text-lg font-semibold leading-none">Windows</p>
-            </div>
-          </button>
-          
-          <button className="flex items-center gap-3 bg-black text-white px-5 py-2.5 rounded-lg hover:bg-gray-800 transition-colors">
-            <div className="w-5 h-5 bg-white/20 rounded-sm"></div>
-            <div className="text-left">
-              <p className="text-[10px] uppercase leading-none">Download on the</p>
-              <p className="text-lg font-semibold leading-none">App Store</p>
-            </div>
-          </button>
-        </div>
-         <div className='mt-10'>
-          <h2 className="text-xl md:text-2xl font-semibold mb-3">
-           Account Security:
-          </h2>
-          <p className="text-sm md:text-base text-gray-500 leading-relaxed">
-           Avoid storing trading passwords in plain text on your desktop or any device. We recommend using a 
-           reputable password manager or committing your credentials to memory. Additionally, refrain from accessing
-            your trading account on public or shared computers, as these environments may pose increased security risks. <br/><br />
-            If you detect any unusual activity on your account such as unauthorised trades, suspicious messages, or other irregularities,
-             it is crucial to cease trading immediately and contact SGFX Support at support@sgfx.com.<br/>
-          </p>
-        </div>
-
-        {/* SECTION 2 */}
-        <div>
-          <h2 className="text-xl md:text-2xl font-semibold mb-3">
-            Risk Warning:
-          </h2>
-          <p className="text-sm md:text-base text-gray-500 leading-relaxed">
-            Trading derivatives involves substantial risk and is not appropriate for all investors. Losses may exceed your 
-            initial deposit, particularly if you are classified as a professional client, in which case you may incur losses 
-            significantly greater than your original investment. When you trade our derivative products, you do not acquire any 
-            rights, entitlements, or obligations relating to the underlying financial instruments.
-                <br /><br /><br />
-                The information provided on this website is general in nature and does not consider your individual investment 
-                objectives, financial situation, or specific needs. Before acting on any information or advice, you should assess 
-                its suitability in light of your personal circumstances. We strongly recommend seeking independent financial advice 
-                if you are unsure.Ensure you have read and understood our <a href="#" className='text-blue-500 font-underline'>Risk Disclosure Policy</a> and are fully aware of the associated 
-                risks before engaging in any trading activity.
-     
-          </p>
-        </div>
-
-        
+    {/* Header Section */}
+    <header className="mb-10 text-center sm:text-left">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+        How to Download and Install MetaTrader 5
+      </h1>
+      <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-4">
+        Simple Setup Instructions for genzBroking Traders
+      </h2>
+      <div className="space-y-4 text-gray-500 text-base md:text-lg leading-relaxed">
+        <p>
+          Ready to trade globally with genzBroking? Setting up MetaTrader 5 is your first step. Don’t worry — we’ll guide you step-by-step so you can start trading confidently.
+        </p>
+        <p>
+          Whether you’re new to trading platforms or have experience with other brokers, this guide ensures you can install and launch MT5 effortlessly.
+        </p>
       </div>
+    </header>
 
+    {/* Stepper Section */}
+    <div className="flex flex-col items-start mb-10">
+      {installationStepsData.map((step, index) => (
+        <div key={step.id} className="flex flex-col items-center sm:items-start">
+          {/* Row: Number Box + Text */}
+          <div className="flex items-center mb-2 sm:mb-4">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-teal-500 text-white font-bold rounded-xl text-lg sm:text-xl shadow-md">
+              {step.id}
+            </div>
+            <h3 className="ml-4 sm:ml-6 text-base sm:text-lg md:text-xl font-bold text-gray-800">
+              {step.title}
+            </h3>
+          </div>
 
-      
+          {/* Connector Line */}
+          {index !== installationStepsData.length - 1 && (
+            <div className="w-12 sm:w-16 flex justify-center">
+              <div className="h-8 border-l-2 border-dotted border-teal-500"></div>
+            </div>
+          )}
+        </div>
+      ))}
     </div>
+
+    {/* Info List Section */}
+    <div className="mb-10">
+      <p className="font-bold text-gray-900 mb-4 text-base md:text-lg">
+        Key Interface Elements:
+      </p>
+      <ul className="space-y-3 text-gray-600 text-base md:text-lg">
+        <li className="flex items-start">
+          <span className="mr-3 text-gray-400">•</span>
+          <span>
+            <span className="font-bold text-gray-800">Market Watch:</span> View real-time prices for all instruments.
+          </span>
+        </li>
+        <li className="flex items-start">
+          <span className="mr-3 text-gray-400">•</span>
+          <span>
+            <span className="font-bold text-gray-800">Navigator:</span> Access accounts, indicators, and expert advisors quickly.
+          </span>
+        </li>
+        <li className="flex items-start">
+          <span className="mr-3 text-gray-400">•</span>
+          <span>
+            <span className="font-bold text-gray-800">Terminal:</span> Manage trades, balances, alerts, and account history efficiently.
+          </span>
+        </li>
+      </ul>
+      <p className="mt-4 text-gray-500 italic text-sm md:text-base">
+        Take your time exploring — no need to memorize everything at once.
+      </p>
+    </div>
+
+    {/* Download Buttons Section */}
+    <div className="flex flex-wrap gap-4 mt-8 justify-center sm:justify-start">
+      <button className="flex items-center gap-3 bg-black text-white px-5 py-2.5 rounded-lg hover:bg-gray-800 transition-colors">
+        <div className="w-5 h-5 bg-white/20 rounded-sm"></div>
+        <div className="text-left">
+          <p className="text-[10px] uppercase leading-none">Download for</p>
+          <p className="text-lg font-semibold leading-none">Windows</p>
+        </div>
+      </button>
+
+      <button className="flex items-center gap-3 bg-black text-white px-5 py-2.5 rounded-lg hover:bg-gray-800 transition-colors">
+        <div className="w-5 h-5 bg-white/20 rounded-sm"></div>
+        <div className="text-left">
+          <p className="text-[10px] uppercase leading-none">Download for</p>
+          <p className="text-lg font-semibold leading-none">Mac / App Store</p>
+        </div>
+      </button>
+    </div>
+
+    {/* Account Security Section */}
+    <div className="mt-10">
+      <h2 className="text-xl md:text-2xl font-semibold mb-3">
+        Account Security
+      </h2>
+      <p className="text-sm md:text-base text-gray-500 leading-relaxed">
+        Protect your genzBroking account: avoid storing passwords in plain text, use a reliable password manager, and never access your account on shared or public devices. 
+        If you notice unusual activity such as unauthorized trades or alerts, stop trading immediately and contact <span className="font-bold text-gray-800">genzBroking Support</span> at support@genzbroking.com.
+      </p>
+    </div>
+
+    {/* Risk Warning Section */}
+    <div className="mt-10">
+      <h2 className="text-xl md:text-2xl font-semibold mb-3">
+        Risk Warning
+      </h2>
+      <p className="text-sm md:text-base text-gray-500 leading-relaxed">
+        Trading CFDs involves significant risk and may not suit everyone. Losses can exceed deposits, particularly for professional clients. 
+        You do not own the underlying assets. Ensure you fully understand the risks and consider your financial situation before trading. 
+        Read our <a href="#" className="text-blue-500 underline">Risk Disclosure Policy</a> for complete information.
+      </p>
+    </div>
+
+  </div>
+</div>
 
     <Fund/>
  </>

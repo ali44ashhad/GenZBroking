@@ -28,22 +28,23 @@ const GlobalTrading = () => {
         {/* Content Section */}
         <div className="relative z-10 flex flex-col items-center max-w-3xl mx-auto">
           {/* Top Label */}
-         <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-emerald-400 uppercase mb-4">
-        Stay Informed on Global Trading Holidays
-      </span>
+        <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-emerald-400 uppercase mb-4">
+  Plan Ahead for Global Market Closures
+</span>
 
-      {/* Main Heading */}
-      <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-8">
-        Global Trading Holiday Schedule for 2025
-      </h1>
+{/* Main Heading */}
+<h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-8">
+  2025 Global Trading Holiday Calendar
+</h1>
 
-      {/* Description */}
-      <p className="text-sm md:text-base text-blue-100/80 leading-relaxed font-light">
-        Markets don’t close often, but when they do, it pays to know in advance.
-        The SGFX holiday trading schedule helps you stay on top of global
-        holidays, early closes, and those outlier days when the timing shifts.
-        Get ready to start making the most of holiday trading with SGFX.
-      </p>
+{/* Description */}
+<p className="text-sm md:text-base text-blue-100/80 leading-relaxed font-light">
+  Knowing when markets close is key to staying ahead. The GenZBroking trading holiday calendar 
+  keeps you informed of global market holidays, early closings, and special trading days. 
+  Plan your trades with confidence and avoid surprises, ensuring you make the most of every 
+  trading opportunity, even during holiday periods.
+</p>
+
         </div>
       </div>
     </div>

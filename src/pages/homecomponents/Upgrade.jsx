@@ -20,7 +20,7 @@ export default function Upgrade() {
         </p>
 
         <h2 className="text-center text-2xl md:text-4xl font-bold mt-3">
-          Upgrade Your Strategy with SGFX
+          Upgrade Your Strategy with GenZBroking
         </h2>
 
         {/* Cards */}

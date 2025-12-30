@@ -101,74 +101,73 @@ const Navbar = () => {
 
           {/* LOGO */}
           <Link to="/" className="flex items-center gap-1">
-            <img src={images.logo} alt="SGFX Logo" className="h-12 w-auto" />
+            <img src={images.logo} alt="GenZBroking Logo" className="h-12 w-auto" />
           </Link>
 
           {/* DESKTOP MENU */}
-          <div className="hidden lg:flex items-center gap-8">
-            {navLinks.map(link => (
-              <div
-                key={link.name}
-                className="relative hover:cursor-pointer"
-                onMouseEnter={() => link.subLinks && setActiveDesktopDropdown(link.name)}
-                onMouseLeave={() => setActiveDesktopDropdown(null)}
-              >
+       <div className="hidden lg:flex items-center gap-8">
+  {navLinks.map(link => (
+    <div
+      key={link.name}
+      className="hover:cursor-pointer w-auto relative"
+      onMouseEnter={() => link.subLinks && setActiveDesktopDropdown(link.name)}
+      onMouseLeave={() => setActiveDesktopDropdown(null)}
+    >
 
-                {/* MAIN ITEM */}
-                {link.subLinks ? (
-                  <button
-                    onClick={() =>
-                      setActiveDesktopDropdown(
-                        activeDesktopDropdown === link.name ? null : link.name
-                      )
-                    }
-                    className="flex items-center gap-1 font-semibold text-gray-600 hover:text-blue-600 py-4 hover:cursor-pointer"
-                  >
-                    {link.name}
-                    <ChevronDown
-                      size={14}
-                      className={`transition ${
-                        activeDesktopDropdown === link.name ? "rotate-180" : ""
-                      }`}
-                    />
-                  </button>
-                ) : (
-                  <Link
-                    to={link.to}
-                    className="font-semibold text-gray-600 hover:text-blue-600 py-4"
-                  >
-                    {link.name}
-                  </Link>
-                )}
+      {/* MAIN ITEM */}
+      {link.subLinks ? (
+        <button
+          onClick={() =>
+            setActiveDesktopDropdown(
+              activeDesktopDropdown === link.name ? null : link.name
+            )
+          }
+          className="flex items-center gap-0 font-semibold text-gray-600 hover:text-blue-600 py-4 hover:cursor-pointer"
+        >
+          {link.name}
+          <ChevronDown
+            size={14}
+            className={`transition ${activeDesktopDropdown === link.name ? "rotate-180" : ""}`}
+          />
+        </button>
+      ) : (
+        <Link
+          to={link.to}
+          className="font-semibold text-gray-600 hover:text-blue-600 py-4"
+        >
+          {link.name}
+        </Link>
+      )}
 
-                {/* DROPDOWN */}
-                <AnimatePresence>
-                  {link.subLinks && activeDesktopDropdown === link.name && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 10 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-2 z-50"
-                    >
-                      <div className="bg-white border shadow-xl rounded-xl p-6 flex gap-10">
-                        {link.subLinks.map(sub => (
-                          <Link
-                            key={sub.name}
-                            to={sub.to}
-                            onClick={() => setActiveDesktopDropdown(null)}
-                            className="min-w-[200px] hover:text-blue-600"
-                          >
-                            <div className="font-bold">{sub.name}</div>
-                          </Link>
-                        ))}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+      {/* DROPDOWN */}
+      <AnimatePresence>
+        {link.subLinks && activeDesktopDropdown === link.name && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            className="absolute top-full left-1/2 -translate-x-1/2 mt-2 z-50"
+          >
+            {/* REDUCED GAP HERE */}
+            <div className="bg-white border shadow-xl rounded-xl p-6 flex gap-2">
+              {link.subLinks.map(sub => (
+                <Link
+                  key={sub.name}
+                  to={sub.to}
+                  onClick={() => setActiveDesktopDropdown(null)}
+                  className="min-w-[200px] hover:text-blue-600"
+                >
+                  <div className="font-bold">{sub.name}</div>
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
-              </div>
-            ))}
-          </div>
+    </div>
+  ))}
+</div>
 
           {/* ACTION */}
           <div className="flex items-center gap-3">
@@ -197,7 +196,7 @@ const Navbar = () => {
               initial={{ x: "100%" }} animate={{ x: 0 }} exit={{ x: "100%" }}
             >
               <div className="p-6 flex justify-between">
-                <span className="font-black text-xl">SGFX</span>
+                <span className="font-black text-xl">GenZBroking</span>
                 <X onClick={() => setIsMobileMenuOpen(false)} />
               </div>
 

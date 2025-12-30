@@ -33,17 +33,18 @@ const ForexMarketWatch = () => {
         {/* Content Layer */}
         <div className="relative z-10 max-w-3xl">
           <span className="text-emerald-400 font-bold tracking-[0.2em] text-xs md:text-sm uppercase mb-4 block">
-            Track Currency Moves in Real Time
-          </span>
-          
-          <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
-            Real-Time Market Watch
-          </h1>
-          
-          <p className="text-gray-300 text-sm md:text-base lg:text-lg leading-relaxed font-light px-4">
-            The SGFX Forex Market Watch online gives you direct access to real-time stock and 
-            forex market data and up-to-the-minute updates from global stock exchanges.
-          </p>
+  Monitor Currency & Market Trends Instantly
+</span>
+
+<h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
+  Live Market Insights
+</h1>
+
+<p className="text-gray-300 text-sm md:text-base lg:text-lg leading-relaxed font-light px-4">
+  Stay connected to global financial markets with GenZBroking Forex Market Watch. 
+  Get real-time updates on currency movements, stocks, and indices—directly from major exchanges—so you can make informed trading decisions the moment market conditions change.
+</p>
+
         </div>
 
         {/* Subtle Bottom Glow */}
@@ -58,13 +59,13 @@ const ForexMarketWatch = () => {
     <div className="mt-10 w-full max-w-5xl mx-auto p-4 flex flex-col items-center bg-gray-50 rounded-xl shadow-sm">
         <div className="text-center mb-10">
           <h2 className="text-gray-900 text-2xl md:text-3xl font-bold mb-4">
-            Live Forex Cross Rates
-          </h2>
-          <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
-            For your own benefit and protection please read the documents below and any 
-            other information made available to you via this website prior to opening 
-            an account or placing an order.
-          </p>
+  Real-Time Forex Cross Rates
+</h2>
+<p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+  Before opening an account or executing a trade, we recommend reviewing the documents below 
+  and any other relevant information available on this website. Staying informed helps you 
+  trade responsibly and make smarter decisions.
+</p>
         </div>
       {/* Container for the Iframe to handle responsiveness */}
       <div className="w-full overflow-hidden rounded-lg bg-white border border-gray-200">

@@ -9,35 +9,35 @@ const Company = () => {
  
   return (
     <>
-      <div className="mt-50 relative w-[95%] md:w-[85%] lg:w-[70%] m-auto 
-  min-h-[420px] md:min-h-[500px] lg:min-h-[800px] 
+     <div className="mt-50 relative w-[95%] md:w-[85%] lg:w-[70%] m-auto 
+  min-h-[320px] md:min-h-[400px] lg:min-h-[700px] 
   flex items-center justify-center rounded-2xl overflow-hidden">
 
   {/* Background Image */}
   <img
     src={images.heroBg}
-    alt="Trading Background"
+    alt="Global Trading"
     className="absolute inset-0 w-full h-full object-cover"
   />
 
   {/* Center Content */}
   <div className="relative z-10 text-center max-w-3xl px-5 md:px-12">
     <span className="text-emerald-400 uppercase tracking-wider text-xs md:text-base">
-      Who We Are
+      About Our Company
     </span>
 
     <h1 className="text-white text-2xl md:text-5xl lg:text-6xl font-bold mt-4">
-      A Trusted Name in <br /> Online Trading
+      Built for Traders <br /> Driven by Integrity
     </h1>
 
     <p className="text-white/80 text-sm md:text-lg mt-4">
-      Focusing on what truly matters: reliable trading tools, clear communication,
-      and long-term relationships with our clients.
+      We deliver a transparent trading environment supported by advanced technology,
+      strong regulation, and a client-first approach.
     </p>
 
     <button className="mt-6 px-7 py-3 bg-white text-[#0B1441] font-semibold 
       rounded-full hover:bg-gray-200 transition-all duration-300">
-      Get Started
+      Start Your Journey
     </button>
   </div>
 </div>
@@ -46,91 +46,90 @@ const Company = () => {
 
 {/* second section  */}
 <div className="bg-white min-h-screen py-16 px-4 font-sans text-gray-700">
-      {/* Main Container - Constrained to 70% width on large screens */}
-      <div className="max-w-full lg:w-[70%] mx-auto">
-        
-        {/* Sub-header / Tagline */}
-        <p className="text-[#2DD4BF] font-semibold text-xs tracking-widest uppercase mb-4">
-          Trade with confidence. Grow with purpose.
+  <div className="max-w-full lg:w-[70%] mx-auto">
+    
+    {/* Sub-header */}
+    <p className="text-[#2DD4BF] font-semibold text-xs tracking-widest uppercase mb-4">
+      Professional trading. Global reach.
+    </p>
+
+    {/* Main Title */}
+    <h1 className="text-4xl md:text-5xl font-bold text-black mb-8">
+      Built Around the Trader
+    </h1>
+
+    {/* About Section */}
+    <section className="mb-10">
+      <h2 className="text-xl font-bold text-black mb-4">Our Philosophy</h2>
+      <div className="space-y-6 leading-relaxed text-[15px]">
+        <p>
+          At GenZBroking, our focus is simple: provide traders with a dependable platform
+          where execution is fast, pricing is fair, and information is always clear.
+          We remove unnecessary complexity so you can focus on your strategy.
         </p>
-
-        {/* Main Title */}
-        <h1 className="text-4xl md:text-5xl font-bold text-black mb-8">
-          Empowering Traders
-        </h1>
-
-        {/* Section: About SGFX */}
-        <section className="mb-10">
-          <h2 className="text-xl font-bold text-black mb-4">About SGFX</h2>
-          <div className="space-y-6 leading-relaxed text-[15px]">
-            <p>
-              At SGFX, we believe good trading starts with trust. That means no shortcuts or confusion, 
-              just a clear, reliable platform built for people who are serious about how they invest.
-            </p>
-            <p>
-              SGFX is an independent financial services company with a strong foundation in global markets. 
-              Our team brings years of experience in trading, risk management, and client support to today's 
-              trading community. We've taken what we've learned and built something simple, solid, and 
-              made to last and we're proud to invite you to join our journey.
-            </p>
-          </div>
-        </section>
-
-        {/* Section: Regulated and Responsible */}
-        <section className="mb-10">
-          <h3 className="text-md font-bold text-black mb-4">Regulated and Responsible</h3>
-          <div className="space-y-6 leading-relaxed text-[15px]">
-            <p>
-              We're regulated in Mauritius under an <span className="font-bold">Investment Dealer License</span> issued by the <span className="font-bold">Financial Services Commission (FSC)</span>. 
-              That matters. It means there are rules we have to follow, and we're more than okay with that. 
-              For us, it's the foundation of transparency and stability.
-            </p>
-            <p>
-              Our clients come from all over the world, including fast-growing regions where reliable 
-              access to global markets hasn't always been easy to find. SGFX exists to change that, 
-              ensuring everyone has the freedom to trade, wherever they are.
-            </p>
-          </div>
-        </section>
-
-        {/* Section: What You Can Trade */}
-        <section className="mb-10">
-          <h3 className="text-md font-bold text-black mb-4">What You Can Trade</h3>
-          <p className="mb-4 text-[15px]">We offer a broad set of markets, all accessible through a single platform:</p>
-          <ul className="list-disc list-inside space-y-1 mb-6 text-[15px] ml-2">
-            <li>Currencies (Forex)</li>
-            <li>Global equity indices</li>
-            <li>Precious metals</li>
-            <li>Energy products</li>
-            <li>Crypto CFDs</li>
-          </ul>
-          <p className="leading-relaxed text-[15px]">
-            Our customers have access to more than <span className="font-bold">300 instruments</span>. 
-            You can build strategies, diversify your exposure, or keep things simple. However you trade, 
-            we aim to give you the space to do it well.
-          </p>
-        </section>
-
-        {/* Section: Who We Are */}
-        <section className="mb-10">
-          <h3 className="text-md font-bold text-black mb-4">Who We Are</h3>
-          <div className="space-y-6 leading-relaxed text-[15px]">
-            <p>
-              SGFX was started by a group of professionals who've worked in the financial industry long 
-              enough to know where it works, and where it doesn't. We've seen platforms overpromise 
-              and underdeliver. We've seen traders pushed into setups that don't really serve them.
-            </p>
-            <p>
-              So we built SGFX to do the opposite. We're here to keep things focused, grounded, and 
-              aligned with what real traders actually need: fair conditions, useful tools, fast execution, 
-              and someone who answers when you call. It's our commitment to our clients that makes us 
-              a partner, not just a platform provider.
-            </p>
-          </div>
-        </section>
-
+        <p>
+          Backed by a team with deep experience in global financial markets, GenZBroking
+          was created to meet the needs of modern traders — whether you're managing
+          short-term positions or building long-term exposure.
+        </p>
       </div>
-    </div>
+    </section>
+
+    {/* Regulation Section */}
+    <section className="mb-10">
+      <h3 className="text-md font-bold text-black mb-4">Regulation & Trust</h3>
+      <div className="space-y-6 leading-relaxed text-[15px]">
+        <p>
+          GenZBroking operates under an <span className="font-bold">Investment Dealer License</span>
+          regulated by the <span className="font-bold">Financial Services Commission (FSC) of Mauritius</span>.
+          This ensures we meet strict standards for transparency, compliance, and client protection.
+        </p>
+        <p>
+          Regulation isn’t a checkbox for us — it’s a commitment. We believe a
+          secure and well-regulated environment is essential for long-term trading success.
+        </p>
+      </div>
+    </section>
+
+    {/* Markets Section */}
+    <section className="mb-10">
+      <h3 className="text-md font-bold text-black mb-4">Markets Available</h3>
+      <p className="mb-4 text-[15px]">
+        Trade multiple asset classes from one powerful platform:
+      </p>
+      <ul className="list-disc list-inside space-y-1 mb-6 text-[15px] ml-2">
+        <li>Foreign Exchange (Forex)</li>
+        <li>Major and regional indices</li>
+        <li>Gold, silver, and metals</li>
+        <li>Energy commodities</li>
+        <li>Cryptocurrency CFDs</li>
+      </ul>
+      <p className="leading-relaxed text-[15px]">
+        With access to over <span className="font-bold">300 tradable instruments</span>,
+        GenZBroking enables you to diversify, hedge, and adapt as markets evolve.
+      </p>
+    </section>
+
+    {/* Team Section */}
+    <section className="mb-10">
+      <h3 className="text-md font-bold text-black mb-4">Our Commitment</h3>
+      <div className="space-y-6 leading-relaxed text-[15px]">
+        <p>
+          GenZBroking was founded by professionals who understand both the technical and
+          human side of trading. We’ve seen the gaps in the industry — and built our
+          services to close them.
+        </p>
+        <p>
+          From execution speed to customer support, everything we do is designed
+          to support real traders. We don’t just provide access to markets — we aim
+          to be a reliable trading partner you can grow with.
+        </p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
 <ExploreTrading/>
 <Testimonial/>
 <div className="relative w-full isolate">

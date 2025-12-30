@@ -27,21 +27,23 @@ const Blogs = () => {
         {/* Content Section */}
         <div className="relative z-10 flex flex-col items-center max-w-3xl mx-auto">
           {/* Top Label */}
-          <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-emerald-400 uppercase mb-4">
-            Data-Driven Trading Insights
-          </span>
+         <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-emerald-400 uppercase mb-4">
+  Data-Driven Trading Insights
+</span>
 
-          {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-8">
-            SGFX Trading Insights and Learning
-          </h1>
+{/* Main Heading */}
+<h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-8">
+  GENZbroking Market Insights & Learning
+</h1>
 
-          {/* Description */}
-          <p className="text-sm md:text-base text-blue-100/80 leading-relaxed font-light">
-            Explore the SGFX Blog for expert insights and analysis on futures, 
-            indices, stocks, currencies, CFDs, and Forex. Stay informed and ahead 
-            in the financial markets with our categorized content.
-          </p>
+{/* Description */}
+<p className="text-sm md:text-base text-blue-100/80 leading-relaxed font-light">
+  Explore the Enzbroking Blog for expert analysis, trading strategies, and actionable market insights 
+  across Forex, stocks, indices, CFDs, and commodities. Stay informed, sharpen your trading skills, 
+  and make confident, data-driven decisions with our in-depth content.
+</p>
+
+
         </div>
       </div>
     </div>

@@ -34,7 +34,8 @@ function TradingViewWidget() {
       
       {/* --- New Content Section --- */}
       <div style={{ marginBottom: '32px' }}>
-        <h2 style={{ 
+        <h2 className='px-5'
+          style={{ 
           fontSize: '28px', 
           fontWeight: '700', 
           color: '#131722', 
@@ -42,17 +43,19 @@ function TradingViewWidget() {
         }}>
           Track Key Economic Drivers
         </h2>
-        <p style={{ 
+        <p className='px-5'
+          style={{ 
           fontSize: '16px', 
           lineHeight: '1.6', 
           color: '#4a4e5a', 
           textAlign: 'justify' 
         }}>
-          Sometimes, a single headline can shift the market. If you're trading without knowing what's on the horizon, 
-          you're working with a blind spot. The SGFX world economic calendar lays out the major events you need to 
-          see before they make waves. Every data point is listed with forecast, previous figures, and impact level. 
-          Whether you’re waiting for volatility or trying to avoid it, this calendar helps you plan with purpose. 
-          For traders who like to think a few moves ahead, this economic calendar will help you maintain momentum.
+          Market-moving events can appear out of nowhere, and trading without foresight is risky. 
+  The GenZBroking global economic calendar keeps you informed about upcoming economic releases, 
+  including forecasts, previous results, and their potential impact. Whether you're seeking 
+  opportunities during volatility or aiming to avoid surprises, this calendar equips you to 
+  trade strategically. For traders who plan their moves in advance, it’s an essential tool 
+  to stay ahead and maintain momentum.
         </p>
       </div>
       {/* --------------------------- */}

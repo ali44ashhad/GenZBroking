@@ -23,7 +23,7 @@ const Footer = () => {
       { name: 'Indices', href: '/indices' },
       { name: 'Products', href: '/products' },
       { name: 'How To Install MT5 (MetaTrader 5)', href: '/how-to-install-mt5' },
-      { name: 'SGFX Trader (Web Trader)', href: '/sgfxtraders' },
+      
     ],
     tools: [
       { name: 'Economic Calendar', href: '/economic-calender' },
@@ -45,11 +45,8 @@ const Footer = () => {
 
   const socialIcons = [
     { Icon: Facebook, href: '#' },
-    { Icon: Mail, href: '#' },
-    { Icon: Instagram, href: '#' },
     { Icon: MessageCircle, href: '#' },  
     { Icon: Linkedin, href: '#' },
-    { Icon: Youtube, href: '#' },
     { Icon: Twitter, href: '#' },
   ];
 
@@ -62,8 +59,13 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="lg:col-span-3">
               <div className="flex items-center space-x-1 mb-6">
-                <img src={images.genzBookingLogo} alt="SGFX Logo" className="h-15 w-auto" />
-              </div>
+  <img
+    src={images.genzBookingLogo}
+    alt="GenZBroking Logo"
+    className="h-12 sm:h-15 md:h-20 w-auto"
+  />
+</div>
+
               <p className="text-sm leading-relaxed mb-6 max-w-xs">
                 Discover the ultimate hub for online trading at our platform!
               </p>

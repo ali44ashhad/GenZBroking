@@ -15,6 +15,7 @@ import stock from './home/stock.png'
 import demoAccounting from './home/demoaccounting.png'
 import heroBg from './furtherpages/heroBg.png'
 import contactBg from './furtherpages/contactbg.png'
+import metaTrader5 from './furtherpages/metatrader5.png' 
 
 // funds //
 import airtel from './funds/airtel.png'
@@ -43,6 +44,7 @@ const images = {
     demoAccounting,
     heroBg,
     contactBg,
+    metaTrader5,
     stock,
     logo,
     bitCoin,

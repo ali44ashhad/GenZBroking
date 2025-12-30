@@ -4,165 +4,136 @@ import Fund from '../../components/Fund'
 const RiskDisclouser = () => {
   return (
     <>
-         <section className="bg-gray-100 py-32 px-4 sm:px-6 lg:px-8 ">
-      <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-lg p-6 sm:p-10">
+        <section className="my-10 bg-gray-100 py-32 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-lg p-6 sm:p-10">
 
-        {/* Page Title */}
-        <h1 className="text-3xl md:text-4xl font-bold text-black mb-6">
-          Overview
-        </h1>
+    {/* Page Title */}
+    <h1 className="text-3xl md:text-4xl font-bold text-black mb-6">
+      Overview
+    </h1>
 
-        {/* Intro Paragraph */}
-        <p className="text-gray-800 text-sm md:text-base leading-relaxed mb-8">
-          The following statements are intended to inform the Customer of the potential
-          risks involved in trading on financial markets. Customers should be aware of
-          the potential losses associated with such risks. This document forms an integral
-          part of the Agreement between the Company and the Customer.
-        </p>
+    {/* Intro Paragraph */}
+    <p className="text-gray-800 text-sm md:text-base leading-relaxed mb-8">
+      The following statements are provided to inform you of the potential risks associated with trading financial markets. You should fully understand these risks and the possibility of losses before opening an account or engaging in trading. This document forms an essential part of your agreement with Genzbroking.
+    </p>
 
-        {/* Section */}
-        <div className="space-y-8 text-gray-800 text-sm md:text-base leading-relaxed">
+    {/* Section */}
+    <div className="space-y-8 text-gray-800 text-sm md:text-base leading-relaxed">
 
-          <p>
-            This document cannot disclose all risks involved in trading and other
-            significant aspects of Foreign Exchange Trading (FOREX) due to the wide range
-            of feasible situations. FOREX is highly speculative and is only suitable for
-            Customers who understand and are willing to assume the economic, legal, and
-            other risks involved, and are financially able to assume losses up to or in
-            excess of Margin or Deposits.
-          </p>
+      <p>
+        This document does not cover every possible risk in trading, as financial markets can be unpredictable. Trading in leveraged products, such as Forex and CFDs, carries a high level of risk and may not be suitable for all investors. You should only trade if you fully understand the risks and are financially able to bear potential losses.
+      </p>
 
-          <p>
-            No return is guaranteed. Future returns may differ from past returns and
-            investors may lose some or all of their money invested. No regulatory
-            authority has vouched for the reliability or financial soundness of the
-            products offered.
-          </p>
+      <p>
+        No returns are guaranteed. Past performance is not indicative of future results. Investments may result in partial or complete loss of capital. No regulatory authority has certified the reliability or financial soundness of the offered products.
+      </p>
 
-          {/* Section Title */}
-          <h2 className="text-xl md:text-2xl font-semibold text-black">
-            1. No Advice
-          </h2>
+      {/* Section Title */}
+      <h2 className="text-xl md:text-2xl font-semibold text-black">
+        1. No Advice
+      </h2>
 
-          <p>
-            SGFX offers an execution-only service. We do not provide investment, legal,
-            regulatory, tax or other advice. Any decision to trade is made solely by you.
-            You may wish to seek independent advice before entering any transaction.
-          </p>
+      <p>
+        Genzbroking provides an execution-only service. We do not offer investment, legal, tax, or regulatory advice. Any decision to trade is solely yours. Independent advice is recommended before entering any transaction.
+      </p>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-black">
-            Our Products and Services
-          </h2>
+      <h2 className="text-xl md:text-2xl font-semibold text-black">
+        Our Products and Services
+      </h2>
 
-          <p>
-            We offer execution-only services and CFDs across a wide range of underlying
-            markets. The characteristics of our products may differ substantially from
-            the actual underlying instruments.
-          </p>
+      <p>
+        We provide execution-only services and CFDs across multiple markets. The characteristics of these products may differ from the actual underlying instruments.
+      </p>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-black">
-            2. Risk Statements
-          </h2>
+      <h2 className="text-xl md:text-2xl font-semibold text-black">
+        2. Risk Statements
+      </h2>
 
-          <p>
-            Online trading involves substantial risk. Customers may lose part or all of
-            their invested funds. You should not risk more than you are prepared to lose.
-            We do not assess whether a product is appropriate for your experience or
-            knowledge level.
-          </p>
+      <p>
+        Trading online involves significant risk. You may lose part or all of your invested funds. Only risk what you can afford to lose. Genzbroking does not evaluate the suitability of a product based on your knowledge or experience.
+      </p>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-black">
-            Investment Specific Risks
-          </h2>
+      <h2 className="text-xl md:text-2xl font-semibold text-black">
+        Investment-Specific Risks
+      </h2>
 
-          <p>
-            You should not trade margined products unless you fully understand the risks
-            and have sufficient resources to meet margin obligations in adverse market
-            conditions.
-          </p>
+      <p>
+        You should not trade margined products unless you fully understand the risks and have sufficient resources to meet margin requirements under adverse market conditions.
+      </p>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-black">
-            3. Effect of Leverage
-          </h2>
+      <h2 className="text-xl md:text-2xl font-semibold text-black">
+        3. Effect of Leverage
+      </h2>
 
-          <p>
-            Leverage magnifies both profits and losses. Small market movements may result
-            in substantial gains or losses, potentially exceeding deposits and margin.
-          </p>
+      <p>
+        Leverage amplifies both gains and losses. Even small market movements can result in substantial profits or losses, potentially exceeding your deposits or margin.
+      </p>
 
-          <p>
-            You must maintain sufficient account balance at all times. Failure to meet
-            margin requirements may result in forced liquidation of positions.
-          </p>
+      <p>
+        Maintaining sufficient account balance is your responsibility. Failure to meet margin calls may result in forced liquidation of positions.
+      </p>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-black">
-            Margin Calls and Close Outs
-          </h2>
+      <h2 className="text-xl md:text-2xl font-semibold text-black">
+        Margin Calls and Close-Outs
+      </h2>
 
-          <ul className="list-disc pl-6 space-y-2">
-            <li>Deposit additional funds immediately</li>
-            <li>Close one or more open positions</li>
-            <li>Combination of both actions</li>
-          </ul>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>Deposit additional funds promptly</li>
+        <li>Close one or more open positions</li>
+        <li>Combination of both actions</li>
+      </ul>
 
-          <p>
-            SGFX is not obligated to notify you of margin levels. You are responsible for
-            monitoring your account.
-          </p>
+      <p>
+        Genzbroking is not obliged to notify you of margin levels. Monitoring your account is your responsibility.
+      </p>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-black">
-            Limit and Stop Orders
-          </h2>
+      <h2 className="text-xl md:text-2xl font-semibold text-black">
+        Limit and Stop Orders
+      </h2>
 
-          <p>
-            Limit and stop orders may reduce risk but do not guarantee execution at the
-            requested price, especially during volatile market conditions.
-          </p>
+      <p>
+        Limit and stop orders can reduce risk but do not guarantee execution at the requested price, particularly during volatile market conditions.
+      </p>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-black">
-            Technical Risks
-          </h2>
+      <h2 className="text-xl md:text-2xl font-semibold text-black">
+        Technical Risks
+      </h2>
 
-          <p>
-            Online trading systems may fail due to hardware, software, internet, or
-            communication errors, resulting in loss of opportunity or financial loss.
-          </p>
+      <p>
+        Online trading systems may fail due to hardware, software, internet, or communication errors, which can result in lost opportunities or financial loss.
+      </p>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-black">
-            Trading Platform Risks
-          </h2>
+      <h2 className="text-xl md:text-2xl font-semibold text-black">
+        Trading Platform Risks
+      </h2>
 
-          <p>
-            Delays, slippage, transmission failures, and liquidity gaps may impact order
-            execution prices and timing.
-          </p>
+      <p>
+        Delays, slippage, or gaps in liquidity may affect the execution price or timing of your orders.
+      </p>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-black">
-            Volatility Risk
-          </h2>
+      <h2 className="text-xl md:text-2xl font-semibold text-black">
+        Market Volatility
+      </h2>
 
-          <p>
-            Foreign exchange markets are highly volatile. Rapid price movements can
-            result in significant losses beyond deposited funds.
-          </p>
+      <p>
+        Financial markets are highly volatile. Rapid price fluctuations may lead to significant losses, potentially exceeding deposited funds.
+      </p>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-black">
-            Automated & Algorithmic Trading
-          </h2>
+      <h2 className="text-xl md:text-2xl font-semibold text-black">
+        Automated & Algorithmic Trading
+      </h2>
 
-          <p>
-            SGFX strictly prohibits the use of automated or algorithmic trading tools.
-            Any violation may result in account suspension, closure, or profit reversal.
-          </p>
+      <p>
+        Use of automated or algorithmic trading tools is strictly prohibited by Genzbroking. Any breach may result in suspension, account closure, or reversal of profits.
+      </p>
 
-          <p className="font-medium">
-            By trading with SGFX, you acknowledge that you understand and accept all
-            risks involved and that you are financially capable of assuming these risks.
-          </p>
+      <p className="font-medium">
+        By trading with Genzbroking, you acknowledge that you understand and accept all associated risks and that you are financially capable of bearing them.
+      </p>
 
-        </div>
-      </div>
-    </section>
+    </div>
+  </div>
+</section>
 
 
     <Fund/>

@@ -21,116 +21,256 @@ const Home = () => {
   return (
     <>
       {/* ================= HERO SECTION ================= */}
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={fadeUp}
-        transition={{ duration: 0.8 }}
-        className="mt-50 mx-auto max-w-7xl overflow-hidden rounded-[40px] bg-[#051139] relative"
+     <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={fadeUp}
+      transition={{ duration: 0.8 }}
+      className="
+        mt-44
+        w-[95%]
+        lg:w-full
+        lg:max-w-7xl
+        mx-auto
+        overflow-hidden
+        rounded-2xl
+        lg:rounded-[40px]
+        bg-[#051139]
+        relative
+      "
+    >
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none"
       >
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none"
-        >
-          <source src={images.bgVideo} type="video/mp4" />
-        </video>
+        <source src={images.bgVideo} type="video/mp4" />
+      </video>
 
-        <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12 p-8 md:p-16">
-          <motion.div
+      {/* Content */}
+      <div className="
+        relative z-10
+        flex flex-col lg:flex-row
+        items-center justify-between
+        gap-10 lg:gap-16
+        p-6 sm:p-8 md:p-14 lg:p-16
+      ">
+        {/* Left Content */}
+        <motion.div
+          variants={fadeUp}
+          transition={{ delay: 0.2 }}
+          className="w-full lg:w-1/2 text-left"
+        >
+          <motion.h4
+            variants={fadeUp}
+            className="
+              text-[#00d1b2]
+              font-bold
+              tracking-[0.25em]
+              text-xs sm:text-sm md:text-base
+              uppercase
+              mb-4 sm:mb-6
+            "
+          >
+            Built for Modern Traders
+          </motion.h4>
+
+          {/* 🔥 ALTERNATIVE HEADING */}
+          <motion.h1
+            variants={fadeUp}
+            transition={{ delay: 0.1 }}
+            className="
+              text-white
+              text-3xl sm:text-4xl md:text-5xl lg:text-6xl
+              font-extrabold
+              leading-tight
+              mb-6 sm:mb-8
+            "
+          >
+            Trade Smarter.  
+            <br className="hidden sm:block" />
+            Grow Faster with Global Market Access
+          </motion.h1>
+
+          {/* 🔥 ALTERNATIVE DESCRIPTION */}
+          <motion.p
             variants={fadeUp}
             transition={{ delay: 0.2 }}
-            className="w-full lg:w-1/2 text-left"
+            className="
+              text-gray-200
+              text-base sm:text-lg md:text-xl
+              max-w-xl
+              mb-8 sm:mb-10
+              leading-relaxed
+            "
           >
-            <motion.h4
-              variants={fadeUp}
-              className="text-[#00d1b2] font-bold tracking-[0.25em] text-sm md:text-base uppercase mb-6"
-            >
-              Smart Trading Starts Here
-            </motion.h4>
+            Unlock institutional-grade trading tools, ultra-fast execution,
+            and transparent pricing across forex, indices, commodities,
+            and crypto — all in one powerful platform.
+          </motion.p>
 
-            <motion.h1
-              variants={fadeUp}
-              transition={{ delay: 0.1 }}
-              className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-8"
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="
+                bg-white
+                text-[#051139]
+                px-8 sm:px-10
+                py-3 sm:py-4
+                rounded-xl
+                font-bold
+                text-base sm:text-lg
+                shadow-2xl
+              "
             >
-              Trade Global Markets with Confidence and Precision
-            </motion.h1>
-
-            <motion.p
-              variants={fadeUp}
-              transition={{ delay: 0.2 }}
-              className="text-gray-200 text-lg md:text-xl max-w-xl mb-10 leading-relaxed"
-            >
-              Access a powerful trading ecosystem built for speed, transparency,
-              and performance—designed for traders who demand more from every move.
-            </motion.p>
+              Start Trading
+            </motion.button>
 
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-[#051139] px-10 py-4 rounded-xl font-bold text-lg shadow-2xl"
+              className="
+                border border-white/40
+                text-white
+                px-8 sm:px-10
+                py-3 sm:py-4
+                rounded-xl
+                font-semibold
+                text-base sm:text-lg
+                backdrop-blur-sm
+              "
             >
-              Start Trading Now
+              Try Free Demo
             </motion.button>
-          </motion.div>
+          </div>
+        </motion.div>
 
-          <motion.div
-            variants={fadeUp}
-            transition={{ delay: 0.4 }}
-            className="w-full lg:w-1/2"
-          />
-        </div>
-      </motion.div>
+        {/* Right Column (Reserved / Illustration / Stats / Image) */}
+        <motion.div
+          variants={fadeUp}
+          transition={{ delay: 0.4 }}
+          className="w-full lg:w-1/2 hidden lg:block"
+        />
+      </div>
+    </motion.div>
 
       {/* ================= SECOND SECTION ================= */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
-        transition={{ duration: 0.8 }}
-        className="mx-auto max-w-7xl overflow-hidden rounded-[40px] bg-[#051139] p-8 md:p-16 lg:p-20 m-20"
-      >
-        <div className="text-center">
-          <motion.p variants={fadeUp} className="text-[#00d1b2] font-bold tracking-widest text-sm uppercase mb-4">
-            Why Traders Choose Us
-          </motion.p>
+   <motion.section
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  variants={fadeUp}
+  transition={{ duration: 0.8 }}
+  className="
+    mx-auto
+    w-[95%]
+    lg:w-full
+    lg:max-w-7xl
+    overflow-hidden
+    rounded-2xl
+    lg:rounded-[40px]
+    bg-[#051139]
+    p-6
+    sm:p-8
+    md:p-16
+    lg:p-20
+    my-10
+    sm:my-14
+    md:my-20
+  "
+>
+  <div className="text-center">
 
-          <motion.h2
-            variants={fadeUp}
-            transition={{ delay: 0.1 }}
-            className="text-3xl md:text-5xl font-bold text-[#051139] mb-20 max-w-4xl mx-auto"
-          >
-            Experience Professional Trading with Advanced Tools and Global Access
-          </motion.h2>
+    {/* Label */}
+    <motion.p
+      variants={fadeUp}
+      className="text-[#00d1b2] font-bold tracking-widest text-xs sm:text-sm uppercase mb-3 sm:mb-4"
+    >
+      Why Traders Choose Us
+    </motion.p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-24 md:gap-x-8">
-            {features.map((feature, index) => (
-              <motion.div
-                key={index}
-                variants={fadeUp}
-                transition={{ delay: index * 0.15 }}
-                className="relative bg-white rounded-[32px] pt-20 pb-12 px-6 shadow-md flex flex-col items-center"
-              >
-                <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-28 h-28">
-                  <img src={feature.icon} alt={feature.alt} className="w-full h-full object-contain" />
-                </div>
+    {/* Heading */}
+    <motion.h2
+      variants={fadeUp}
+      transition={{ delay: 0.1 }}
+      className="
+        text-2xl
+        sm:text-3xl
+        md:text-5xl
+        font-bold
+        text-white
+        mb-12
+        md:mb-20
+        max-w-4xl
+        mx-auto
+      "
+    >
+      Experience Professional Trading with Advanced Tools and Global Access
+    </motion.h2>
 
-                <h3 className="text-[#051139] text-xl md:text-2xl font-bold text-center">
-                  {feature.title}
-                </h3>
-              </motion.div>
-            ))}
+    {/* Feature Cards */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-y-16 sm:gap-y-20 md:gap-x-8">
+      {features.map((feature, index) => (
+        <motion.div
+          key={index}
+          variants={fadeUp}
+          transition={{ delay: index * 0.15 }}
+          className="
+            relative
+            bg-white
+            rounded-2xl
+            md:rounded-[32px]
+            pt-16
+            md:pt-20
+            pb-10
+            md:pb-12
+            px-5
+            md:px-6
+            shadow-md
+            flex
+            flex-col
+            items-center
+          "
+        >
+          {/* Icon */}
+          <div className="
+            absolute
+            -top-10
+            md:-top-12
+            left-1/2
+            -translate-x-1/2
+            w-20
+            h-20
+            md:w-28
+            md:h-28
+          ">
+            <img
+              src={feature.icon}
+              alt={feature.alt}
+              className="w-full h-full object-contain"
+            />
           </div>
 
-          <p className="mt-12 text-gray-400 text-sm">
-            ** Terms may vary by instrument and region
-          </p>
-        </div>
-      </motion.section>
+          {/* Title */}
+          <h3 className="text-[#051139] text-lg md:text-2xl font-bold text-center">
+            {feature.title}
+          </h3>
+        </motion.div>
+      ))}
+    </div>
+
+    {/* Footer note */}
+    <p className="mt-8 md:mt-12 text-gray-400 text-xs sm:text-sm">
+      ** Terms may vary by instrument and region
+    </p>
+  </div>
+</motion.section>
+
 
       {/* ================= THIRD SECTION ================= */}
       <motion.section
