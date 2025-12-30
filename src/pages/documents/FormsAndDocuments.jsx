@@ -35,16 +35,14 @@ const FormsAndDocuments = () => {
 
 
 {/* forms next section */}
-<div className="min-h-screen flex items-center justify-center px-4 py-12 bg-gray-50">
+{/* <div className="min-h-screen flex items-center justify-center px-4 py-12 bg-gray-50">
   <div className="max-w-6xl w-full bg-white rounded-3xl shadow-sm p-6 md:p-16">
-    {/* Header Text */}
-    <h2 className="text-center text-gray-900 text-base sm:text-lg md:text-xl font-semibold mb-10 sm:mb-12 leading-relaxed">
+     <h2 className="text-center text-gray-900 text-base sm:text-lg md:text-xl font-semibold mb-10 sm:mb-12 leading-relaxed">
       For your own benefit and protection, please read the documents below and any other information 
       made available to you via this website before opening an account or placing an order.
     </h2>
 
-    {/* Links Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 sm:gap-x-12 gap-y-4 px-2">
+     <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 sm:gap-x-12 gap-y-4 px-2">
       {links.map((link, index) => (
         <a
           key={index}
@@ -61,7 +59,7 @@ const FormsAndDocuments = () => {
       ))}
     </div>
   </div>
-</div>
+</div> */}
 
     <Fund/>
     </>
