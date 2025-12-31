@@ -30,7 +30,7 @@ export default function Upgrade() {
               key={i}
               className={`rounded-2xl p-6 h-40 flex flex-col justify-between ${card.bg}`}
             >
-              <div className="text-xl font-semibold">{card.value}</div>
+              <div className="text-xl font-semibold text-white">{card.value}</div>
 
               <div className="flex items-center gap-2 text-sm text-white/90">
                 <card.icon size={18} />

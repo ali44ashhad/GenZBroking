@@ -30,6 +30,7 @@ import InstallationMeta from './pages/tradings/InstallationMeta'
 import ScrollToTop from './components/ScrollToTop'
 import News from './pages/news/News'
 import Loader from './pages/company/Loader'
+import Blog1 from './pages/blogs/blogsPages/Blog1'
 
 function App() {
 const [loading, setLoading] = useState(true); 
@@ -55,6 +56,7 @@ const [loading, setLoading] = useState(true);
         <Route path="/regulation-&-license" element={<Regulation />} />
         <Route path="/partners" element={<Partner />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogs/:slug" element={<Blog1 />} />
         <Route path="/promotions" element={<Promotions />} />
         <Route path="/forms-&-documents" element={<FormsAndDocuments />} />
         <Route path="/risk-disclosure" element={<RiskDisclouser />} />

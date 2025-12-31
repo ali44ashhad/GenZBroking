@@ -476,3 +476,545 @@ export const categoryQueryMap = {
   "Wealth Management": "wealth management"
 };
  
+
+
+// blogs data //
+export const blogPosts = [
+  {
+    id: 1,
+    slug: "market-watch",
+    category: "Market Watch",
+    title: "Trading the Crosswinds: How Crypto Swings and FX Signals Drive Markets",
+    description:
+      "Bitcoin cools, gold steadies, and Asia FX holds firm as year-end markets reward precision, speed and multi-asset strategies.",
+    imageUrl: images.blog1,
+  },
+  {
+    id: 2,
+    slug: "technology",
+    category: "Technology",
+    title: "Year-End Markets in Motion: Asia, AI Chips, and Global Supply Chains",
+    description:
+      "Deep dive into how the surge in AI hardware demand is shifting equity weights across Asian manufacturing hubs.",
+    imageUrl: images.blog2,
+  },
+  {
+    id: 3,
+    slug: "crypto",
+    category: "Crypto",
+    title: "From Asia to Crypto: How Active Traders Are Positioning for the Next Move",
+    description:
+      "Asian equities and digital assets are driving selective opportunities as liquidity thins and institutional interest grows.",
+    imageUrl: images.blog3,
+  },
+  {
+    id: 4,
+    slug: "strategy",
+    category: "Strategy",
+    title: "The Art of Hedging: Managing Volatility in Uncertain Global Climates",
+    description:
+      "Explore advanced hedging techniques using gold and stablecoins to protect portfolios against sudden market shifts.",
+    imageUrl: images.blog4,
+  },
+  {
+    id: 5,
+    slug: "emerging-markets",
+    category: "Market Watch",
+    title: "Emerging Markets Outlook: Why Southeast Asia is the New Frontier",
+    description:
+      "Foreign direct investment is pouring into Vietnam and Indonesia. We examine the long-term impact on local currencies.",
+    imageUrl: images.blog5,
+  },
+  {
+    id: 6,
+    slug: "quantum-finance",
+    category: "Technology",
+    title: "Quantum Computing in Finance: The Next Evolution of Algorithmic Trading",
+    description:
+      "How high-frequency trading firms are preparing for the quantum leap and what it means for retail market liquidity.",
+    imageUrl: images.blog6,
+  },
+  {
+    id: 7,
+    slug: "defi-2-0",
+    category: "Crypto",
+    title: "DeFi 2.0: Beyond the Hype to Sustainable Financial Ecosystems",
+    description:
+      "A critical look at the protocols solving the liquidity fragmentation problem in the decentralized finance space.",
+    imageUrl: images.blog7,
+  },
+  {
+    id: 8,
+    slug: "tokyo-open-trading",
+    category: "Strategy",
+    title: "Mastering the Open: Trading the First Hour of the Tokyo Exchange",
+    description:
+      "A step-by-step guide on how to read opening price action and volume spikes in the Asian morning session.",
+    imageUrl: images.blog8,
+  },
+  {
+    id: 9,
+    slug: "commodity-supercycles",
+    category: "Market Watch",
+    title: "Commodity Supercycles: Is Copper the New Oil for the Green Decade?",
+    description:
+      "As the world pivots to renewables, we analyze the supply constraints and price targets for industrial metals.",
+    imageUrl: images.blog9,
+  },
+];
+
+
+
+export const blogsData = [
+  {
+  slug: "market-watch",
+  title: "Trading the Crosswinds: How Crypto Swings and FX Signals Drive Markets",
+
+  heroImage: images.blog1,
+
+  summary: `Bitcoin cools, gold steadies, and Asia FX holds firm as year-end markets 
+  reward precision, speed, and multi-asset strategies.`,
+
+  sections: [
+    {
+      heading: "Crypto Markets Cool as Liquidity Thins",
+      content: `Cryptocurrency markets pulled back as year-end conditions reduced participation,
+      creating sharper swings in Bitcoin and Ethereum. Traders emphasized precision entry points 
+      to navigate thinner liquidity.`
+    },
+    {
+      heading: "Asia FX Holds Firm Amid Central Bank Signals",
+      content: `Asian currencies remained relatively stable, with the U.S. dollar steady. 
+      Investors carefully monitored central bank announcements, highlighting the importance 
+      of speed in trading FX markets during this period.`
+    },
+    {
+      heading: "Gold and Silver Steady Amid Market Recalibration",
+      content: `After recent volatility, gold and silver stabilized. Safe-haven demand 
+      supported prices, rewarding traders who balanced multi-asset positions across commodities, 
+      FX, and crypto.`
+    },
+    {
+      heading: "Oil Prices Influenced by Geopolitical Tensions",
+      content: `Crude oil held recent gains as geopolitical risks in key regions offset 
+      inventory concerns. Traders applied tactical positioning to respond to swift market changes.`
+    }
+  ],
+
+  moreArticles: [
+    {
+      title: "Markets Recalibrate: Allianz Boosts Outlook",
+      slug: "markets-recalibrate-allianz"
+    },
+    {
+      title: "Analyzing the Financial Implications of the State Budget",
+      slug: "financial-implications-state-budget"
+    },
+    {
+      title: "Impact of EFCC’s N100 Billion Intervention",
+      slug: "efcc-n100-billion-impact"
+    }
+  ]
+},
+
+ {
+  slug: "technology",
+  title: "Year-End Markets in Motion: Asia, AI Chips, and Global Supply Chains",
+
+  heroImage: images.blog2,
+
+  summary: `Deep dive into how the surge in AI hardware demand is shifting equity weights 
+  across Asian manufacturing and influencing global supply chains as year-end markets evolve.`,
+
+  sections: [
+    {
+      heading: "AI Hardware Demand Drives Asian Equity Shifts",
+      content: `The surge in AI chip demand is reshaping Asian manufacturing stocks. 
+      Investors are reallocating capital to tech-heavy indices, reflecting expectations 
+      of sustained growth in AI hardware and software ecosystems.`
+    },
+    {
+      heading: "Supply Chain Bottlenecks and Global Trade Flows",
+      content: `Persistent supply chain constraints continue to affect production schedules 
+      across key sectors. Companies with diversified suppliers and robust logistics 
+      networks are outperforming peers as markets reward operational resilience.`
+    },
+    {
+      heading: "Regional Currencies React to Export Strength",
+      content: `Asian currencies showed mixed movements as trade flows influenced FX markets. 
+      The Japanese yen and Korean won strengthened against the dollar, while others 
+      remained range-bound amid year-end positioning.`
+    },
+    {
+      heading: "Commodities and Energy Prices Reflect Industrial Demand",
+      content: `Rising demand for industrial metals and semiconductors supported commodity prices. 
+      Energy markets also responded to regional manufacturing growth, highlighting 
+      the interconnected nature of production and resource consumption.`
+    }
+  ],
+
+  moreArticles: [
+    {
+      title: "Markets Recalibrate: Allianz Boosts Outlook",
+      slug: "markets-recalibrate-allianz"
+    },
+    {
+      title: "Analyzing the Financial Implications of the State Budget",
+      slug: "financial-implications-state-budget"
+    },
+    {
+      title: "Impact of EFCC’s N100 Billion Intervention",
+      slug: "efcc-n100-billion-impact"
+    }
+  ]
+},
+{
+  slug: "crypto",
+  title: "From Asia to Crypto: How Active Traders Are Positioning for the Next Move",
+
+  heroImage: images.blog3,
+
+  summary: `Asian equities and digital assets are driving selective opportunities 
+  as liquidity thins and institutional investors adjust positions ahead of year-end.`,
+
+  sections: [
+    {
+      heading: "Crypto Markets React to Thinning Liquidity",
+      content: `Cryptocurrency markets experienced heightened swings as year-end liquidity 
+      thinned. Active traders are using precise entry points to capitalize on short-term 
+      volatility in Bitcoin, Ethereum, and altcoins.`
+    },
+    {
+      heading: "Asian Equities Offer Selective Opportunities",
+      content: `Asian stocks remained selective, with certain tech and financial sectors 
+      attracting institutional attention. Traders are positioning in equities with strong 
+      fundamentals and potential year-end catalysts.`
+    },
+    {
+      heading: "Institutional Flows Influence Market Dynamics",
+      content: `Liquidity and trading volumes in both crypto and equities are being shaped 
+      by institutional allocations. Hedge funds and asset managers are adjusting exposure 
+      to optimize risk and returns.`
+    },
+    {
+      heading: "Macro Factors and Market Positioning",
+      content: `Global macro trends, including interest rate expectations and regional 
+      trade developments, continue to affect both digital and traditional assets. 
+      Traders are balancing positions to navigate cross-asset correlations effectively.`
+    }
+  ],
+
+  moreArticles: [
+    {
+      title: "Markets Recalibrate: Allianz Boosts Outlook",
+      slug: "markets-recalibrate-allianz"
+    },
+    {
+      title: "Analyzing the Financial Implications of the State Budget",
+      slug: "financial-implications-state-budget"
+    },
+    {
+      title: "Impact of EFCC’s N100 Billion Intervention",
+      slug: "efcc-n100-billion-impact"
+    }
+  ]
+},
+{
+  slug: "strategy",
+  title: "The Art of Hedging: Managing Volatility in Uncertain Global Climates",
+
+  heroImage: images.blog4,
+
+  summary: `Explore advanced hedging techniques using gold, stablecoins, and other 
+  instruments to protect portfolios against market volatility and global uncertainty.`,
+
+  sections: [
+    {
+      heading: "Using Gold as a Hedge Against Market Volatility",
+      content: `Gold remains a preferred hedge during periods of uncertainty. Traders and 
+      portfolio managers allocate gold to offset risks in equities, crypto, and fixed income, 
+      preserving value in turbulent markets.`
+    },
+    {
+      heading: "Stablecoins and Crypto Hedging Strategies",
+      content: `Stablecoins offer a digital alternative to traditional hedging. 
+      Active traders use them to manage exposure, maintain liquidity, and reduce 
+      volatility-driven drawdowns in crypto portfolios.`
+    },
+    {
+      heading: "Diversification Across Asset Classes",
+      content: `Effective hedging combines multiple asset classes, including equities, 
+      commodities, and digital assets. Diversified strategies reduce systemic risk 
+      and improve resilience during market swings.`
+    },
+    {
+      heading: "Timing and Tactical Positioning",
+      content: `Successful hedging requires precise timing. Traders monitor macro indicators, 
+      geopolitical events, and liquidity conditions to adjust hedges and optimize returns.`
+    }
+  ],
+
+  moreArticles: [
+    {
+      title: "Markets Recalibrate: Allianz Boosts Outlook",
+      slug: "markets-recalibrate-allianz"
+    },
+    {
+      title: "Analyzing the Financial Implications of the State Budget",
+      slug: "financial-implications-state-budget"
+    },
+    {
+      title: "Impact of EFCC’s N100 Billion Intervention",
+      slug: "efcc-n100-billion-impact"
+    }
+  ]
+},
+{
+  slug: "emerging-markets",
+  title: "Emerging Markets Outlook: Why Southeast Asia is the New Frontier",
+
+  heroImage: images.blog5,
+
+  summary: `Foreign direct investment is pouring into Vietnam and Indonesia. 
+  We examine the long-term impact on equity markets, trade flows, and investor strategies.`,
+
+  sections: [
+    {
+      heading: "FDI Surge Drives Market Opportunities",
+      content: `Vietnam and Indonesia are experiencing record foreign investment, 
+      particularly in technology, manufacturing, and infrastructure. This is creating 
+      selective equity opportunities for investors seeking growth.`
+    },
+    {
+      heading: "Sectoral Growth and Equity Positioning",
+      content: `Investors are focusing on sectors poised to benefit from industrial expansion 
+      and rising domestic consumption, with tech, energy, and consumer goods leading the way.`
+    },
+    {
+      heading: "Risks and Macroeconomic Considerations",
+      content: `Emerging markets carry geopolitical, currency, and regulatory risks. 
+      Active traders and fund managers employ tactical positioning to mitigate potential downside.`
+    },
+    {
+      heading: "Long-Term Investment Horizon",
+      content: `While short-term volatility exists, long-term trends in Southeast Asia 
+      suggest sustainable growth. Investors are increasingly integrating these markets into 
+      diversified global portfolios.`
+    }
+  ],
+
+  moreArticles: [
+    {
+      title: "Markets Recalibrate: Allianz Boosts Outlook",
+      slug: "markets-recalibrate-allianz"
+    },
+    {
+      title: "Analyzing the Financial Implications of the State Budget",
+      slug: "financial-implications-state-budget"
+    },
+    {
+      title: "Impact of EFCC’s N100 Billion Intervention",
+      slug: "efcc-n100-billion-impact"
+    }
+  ]
+},
+{
+  slug: "quantum-finance",
+  title: "Quantum Computing in Finance: The Next Evolution of Algorithmic Trading",
+
+  heroImage: images.blog6,
+
+  summary: `High-frequency trading firms are preparing for the quantum leap. 
+  Explore how quantum computing is expected to revolutionize algorithmic trading 
+  and its implications for retail investors.`,
+
+  sections: [
+    {
+      heading: "Quantum Algorithms Transforming Trading",
+      content: `Quantum computing enables the processing of complex datasets at unprecedented speeds, 
+      enhancing predictive models and trading strategies for high-frequency traders.`
+    },
+    {
+      heading: "Impact on Risk Management",
+      content: `Quantum models improve portfolio optimization and risk assessment, 
+      allowing firms to navigate volatility and correlations more effectively than classical systems.`
+    },
+    {
+      heading: "Challenges for Retail Investors",
+      content: `While institutional players prepare for quantum adoption, retail investors must 
+      understand potential shifts in market dynamics, liquidity, and pricing efficiency.`
+    },
+    {
+      heading: "Future Outlook and Adoption Timeline",
+      content: `Quantum computing in finance is still emerging, but early adopters 
+      are gaining a competitive edge. Firms are experimenting with hybrid quantum-classical 
+      systems to optimize trading performance.`
+    }
+  ],
+
+  moreArticles: [
+    {
+      title: "Markets Recalibrate: Allianz Boosts Outlook",
+      slug: "markets-recalibrate-allianz"
+    },
+    {
+      title: "Analyzing the Financial Implications of the State Budget",
+      slug: "financial-implications-state-budget"
+    },
+    {
+      title: "Impact of EFCC’s N100 Billion Intervention",
+      slug: "efcc-n100-billion-impact"
+    }
+  ]
+},
+{
+  slug: "defi-2-0",
+  title: "DeFi 2.0: Beyond the Hype to Sustainable Financial Ecosystems",
+
+  heroImage: images.blog7,
+
+  summary: `A critical look at the protocols addressing liquidity fragmentation in decentralized 
+  finance, highlighting sustainable solutions and opportunities for long-term investors.`,
+
+  sections: [
+    {
+      heading: "Addressing Liquidity Fragmentation",
+      content: `DeFi 2.0 protocols aim to solve inefficiencies caused by fragmented liquidity. 
+      By introducing innovative staking and bonding mechanisms, these platforms are improving 
+      capital utilization across decentralized exchanges.`
+    },
+    {
+      heading: "Sustainable Yield Mechanisms",
+      content: `New protocols focus on sustainable, predictable yields rather than unsustainable 
+      incentives. Investors are evaluating the long-term viability of these DeFi projects.`
+    },
+    {
+      heading: "Cross-Chain Integration and Ecosystem Growth",
+      content: `Interoperability between blockchains is key to DeFi 2.0’s success, 
+      allowing liquidity to flow more freely and unlocking additional trading and lending opportunities.`
+    },
+    {
+      heading: "Risk Management in Decentralized Finance",
+      content: `Despite innovation, smart contract vulnerabilities and protocol risks remain. 
+      Traders and investors are adopting strategic risk frameworks to navigate DeFi safely.`
+    }
+  ],
+
+  moreArticles: [
+    {
+      title: "Markets Recalibrate: Allianz Boosts Outlook",
+      slug: "markets-recalibrate-allianz"
+    },
+    {
+      title: "Analyzing the Financial Implications of the State Budget",
+      slug: "financial-implications-state-budget"
+    },
+    {
+      title: "Impact of EFCC’s N100 Billion Intervention",
+      slug: "efcc-n100-billion-impact"
+    }
+  ]
+},
+{
+  slug: "tokyo-open-trading",
+  title: "Mastering the Open: Trading the First Hour of the Tokyo Exchange",
+
+  heroImage: images.blog8,
+
+  summary: `Step-by-step guide on reading opening price action and volume spikes 
+  during the Asian morning session, helping traders capitalize on high-probability setups.`,
+
+  sections: [
+    {
+      heading: "Understanding Opening Price Action",
+      content: `The first 30–60 minutes of the Tokyo session set the tone for the day. 
+      Traders analyze price ranges, gaps, and volatility to anticipate potential trends.`
+    },
+    {
+      heading: "Volume Spikes and Market Sentiment",
+      content: `Sudden increases in trading volume reveal institutional participation 
+      and can confirm breakout or reversal patterns during the opening hour.`
+    },
+    {
+      heading: "Key Sectors and Instruments in Focus",
+      content: `Japanese equities, FX pairs like USD/JPY, and tech-related indices often 
+      lead the morning session, providing actionable opportunities for active traders.`
+    },
+    {
+      heading: "Tactical Strategies for the First Hour",
+      content: `Traders employ strategies such as momentum scalping, opening range 
+      breakout trades, and early session hedging to optimize risk-reward in the initial hour.`
+    }
+  ],
+
+  moreArticles: [
+    {
+      title: "Markets Recalibrate: Allianz Boosts Outlook",
+      slug: "markets-recalibrate-allianz"
+    },
+    {
+      title: "Analyzing the Financial Implications of the State Budget",
+      slug: "financial-implications-state-budget"
+    },
+    {
+      title: "Impact of EFCC’s N100 Billion Intervention",
+      slug: "efcc-n100-billion-impact"
+    }
+  ]
+},
+{
+  slug: "commodity-supercycles",
+  title: "Commodity Supercycles: Is Copper the New Oil for the Green Decade?",
+
+  heroImage: images.blog9,
+
+  summary: `As the world pivots to renewable energy, we analyze supply constraints, 
+  industrial demand, and potential price targets for copper in the emerging green economy.`,
+
+  sections: [
+    {
+      heading: "Copper Demand in the Renewable Energy Transition",
+      content: `Electrification, EV production, and green infrastructure projects are driving 
+      unprecedented demand for copper, making it a critical commodity for the next decade.`
+    },
+    {
+      heading: "Supply Constraints and Mining Challenges",
+      content: `Limited new supply, geopolitical risks, and long lead times for mine development 
+      are creating potential bottlenecks, impacting global pricing dynamics.`
+    },
+    {
+      heading: "Price Outlook and Investment Strategies",
+      content: `Analysts predict copper prices may follow a supercycle trajectory. 
+      Traders and portfolio managers are exploring long-term exposure through physical, 
+      futures, and ETF positions.`
+    },
+    {
+      heading: "Comparisons to Oil and Industrial Commodities",
+      content: `As copper’s strategic importance grows, it may resemble oil’s role in the 20th century, 
+      serving as a critical driver of industrial and energy transitions.`
+    }
+  ],
+
+  moreArticles: [
+    {
+      title: "Markets Recalibrate: Allianz Boosts Outlook",
+      slug: "markets-recalibrate-allianz"
+    },
+    {
+      title: "Analyzing the Financial Implications of the State Budget",
+      slug: "financial-implications-state-budget"
+    },
+    {
+      title: "Impact of EFCC’s N100 Billion Intervention",
+      slug: "efcc-n100-billion-impact"
+    }
+  ]
+}
+
+
+
+
+
+
+  // 👉 Add more blogs same structure
+];

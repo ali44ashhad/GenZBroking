@@ -3,7 +3,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import images from "../assets/images";
-import {
+ import {
   FaFacebookF,
   FaEnvelope,
   FaInstagram,
@@ -63,7 +63,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav ref={navRef} className="fixed top-0 z-50 w-full bg-white shadow-sm">
+   <>
+     <nav ref={navRef} className="fixed top-0 z-50 w-full bg-white shadow-sm">
       {/* TOP BAR */}
       <div className="w-full bg-gradient-to-r from-blue-700 via-blue-600 to-teal-500 py-3 px-4 md:px-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
@@ -78,7 +79,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center space-x-6 text-white font-medium text-sm md:text-base">
             <a href="#" className="hover:underline underline-offset-4">Try Free Demo</a>
-            <a href="#" className="hover:underline underline-offset-4">IB Login</a>
+            <a href="#" className="hover:underline underline-offset-4">GZ Login</a>
           </div>
         </div>
       </div>
@@ -122,13 +123,13 @@ const Navbar = () => {
                       transition={{ duration: 0.2 }}
                       className="absolute top-full left-1/2 -translate-x-1/2 mt-2 z-50"
                     >
-                      <div className="bg-white border shadow-xl rounded-xl p-6 flex gap-2">
+                      <div className="w-auto bg-white border shadow-xl rounded-xl p-3 flex gap-0">
                         {link.subLinks.map((sub) => (
                           <Link
                             key={sub.name}
                             to={sub.to}
                             onClick={() => setActiveDesktopDropdown(null)}
-                            className="min-w-[200px] hover:text-blue-600"
+                            className="min-w-[120px] text-center hover:text-blue-600"
                           >
                             <div className="font-bold">{sub.name}</div>
                           </Link>
@@ -243,6 +244,8 @@ const Navbar = () => {
         )}
       </AnimatePresence>
     </nav>
+    
+   </>
   );
 };
 

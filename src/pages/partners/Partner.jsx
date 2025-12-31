@@ -20,7 +20,7 @@ const Partner = () => {
             </h1>
 
             <p className="text-slate-500 text-lg leading-relaxed">
-              At Genzbroking, we help brokers and partners build a thriving business by referring traders to our world-class trading platform. Whether you are experienced or just starting out, our IB Program is designed to help you grow, earn, and succeed.
+              At Genzbroking, we help brokers and partners build a thriving business by referring traders to our world-class trading platform. Whether you are experienced or just starting out, our GZProgram is designed to help you grow, earn, and succeed.
             </p>
           </div>
 
@@ -47,7 +47,7 @@ const Partner = () => {
             </p>
 
             <p className="text-slate-600">
-              <span className="font-semibold text-slate-800">Dedicated IB Support:</span> Receive personalized guidance from our experienced affiliate & partnership team.
+              <span className="font-semibold text-slate-800">Dedicated GZSupport:</span> Receive personalized guidance from our experienced affiliate & partnership team.
             </p>
           </div>
 
@@ -89,7 +89,7 @@ const Partner = () => {
           {/* Bonus */}
           <div className="space-y-3">
             <h3 className="text-xl font-bold text-slate-800">
-              Bonus Programs & IB Challenges
+              Bonus Programs & GZChallenges
             </h3>
 
             <p className="text-slate-600">
@@ -97,7 +97,7 @@ const Partner = () => {
             </p>
 
             <p className="font-bold text-emerald-600 text-lg">
-              IB Gold Legend Program
+              GZGold Legend Program
             </p>
           </div>
 
@@ -108,7 +108,7 @@ const Partner = () => {
             </h3>
 
             <p className="text-slate-600">
-              Begin your journey to financial growth. Sign up now and become part of the Genzbroking IB Network.
+              Begin your journey to financial growth. Sign up now and become part of the Genzbroking GZNetwork.
             </p>
 
             <button className="px-8 py-4 rounded-full bg-emerald-500 text-white font-semibold hover:bg-emerald-600 transition">

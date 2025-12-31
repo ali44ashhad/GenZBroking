@@ -37,6 +37,20 @@ import window from './home/window.jpg'
 import mac from './home/desktop.png'
 import googlePlay from './home/googleplay.png'
 
+
+// blogs //
+import blog1 from './blogs/blog1.webp'
+import blog2 from './blogs/blog2.webp'
+import blog3 from './blogs/blog3.png'
+import blog4 from './blogs/blog4.webp'
+import blog5 from './blogs/blog5.jpg'
+import blog6 from './blogs/blog6.png'
+import blog7 from './blogs/blog7.jpg'
+import blog8 from './blogs/blog8.avif'
+import blog9 from './blogs/blog9.png'
+
+
+
 const images = {
     swapFree,
     bgVideo,
@@ -69,6 +83,19 @@ const images = {
     mpi,
     webTrader,
     mobileTrader,
+
+
+
+    // blogs //
+    blog1,
+blog2,
+blog3,
+blog4,
+blog5,
+blog6,
+blog7,
+blog8,
+blog9,
 }
 
 export default images;

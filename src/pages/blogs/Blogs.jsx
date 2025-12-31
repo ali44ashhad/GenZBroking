@@ -1,8 +1,9 @@
 import React from 'react';
-import { Globe, BarChart3 } from 'lucide-react';
+import { Globe, BarChart3 , ArrowRightCircle } from 'lucide-react';
 import BlogNextSection from './BlogNextSection';
 import Fund from '../../components/Fund';
-
+import { blogPosts } from '../../data/data';
+import { Link } from 'react-router-dom';
 
 const Blogs = () => {
   return (
@@ -47,6 +48,72 @@ const Blogs = () => {
         </div>
       </div>
     </div>
+
+
+{/* blogs */}
+<section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8 min-h-screen">
+  
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-5">
+    Insights That Shape Smarter Trading Decisions
+  </h2>
+
+  <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+    Stay ahead of the markets with in-depth analysis across crypto innovation,
+    global trading strategies, and macro market trends. From the evolution of
+    DeFi ecosystems and session-based trading tactics to long-term commodity
+    cycles driving the green economy, our insights are designed to help traders
+    and investors navigate complexity with confidence.
+  </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+         {blogPosts.map((post) => (
+  <div
+    key={post.id}
+    className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full border border-gray-100"
+  >
+    {/* Image */}
+    <div className="h-56 w-full overflow-hidden">
+      <img
+        src={post.imageUrl}
+        alt={post.title}
+        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+      />
+    </div>
+
+    {/* Content */}
+    <div className="p-8 flex flex-col flex-grow">
+      <span className="inline-block px-3 py-1 text-sm font-medium text-blue-600 bg-blue-50 rounded-md w-fit mb-6">
+        {post.category}
+      </span>
+
+      <h2 className="text-2xl font-bold text-gray-900 leading-tight mb-4 line-clamp-3">
+        {post.title}
+      </h2>
+
+      <p className="text-gray-500 text-lg leading-relaxed mb-8 line-clamp-3">
+        {post.description}
+      </p>
+
+      {/* Footer */}
+      <div className="mt-auto">
+        <Link
+          to={`/blogs/${post.slug}`}
+          className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group"
+        >
+          Read more
+          <ArrowRightCircle className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+        </Link>
+      </div>
+    </div>
+  </div>
+))}
+
+        </div>
+      </div>
+    </section>
+
+
+
     <BlogNextSection/>
     <Fund/>
  </>
@@ -54,3 +121,9 @@ const Blogs = () => {
 };
 
 export default Blogs;
+
+
+
+
+
+
