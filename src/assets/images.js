@@ -15,7 +15,7 @@ import bitCoin from './home/bitcoin.png'
 import forex from './home/forex.png'
 import stock from './home/stock.png'
 import demoAccounting from './home/demoaccounting.png'
-import heroBg from './furtherpages/heroBg.png'
+import heroBg from './furtherpages/herobg.png'
 import contactBg from './furtherpages/contactbg.png'
 import metaTrader5 from './furtherpages/metatrader5.png' 
 

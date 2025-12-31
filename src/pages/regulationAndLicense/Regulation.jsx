@@ -78,61 +78,52 @@ const Regulation = () => {
       </div>
 
       {/* --- LOWER SECTION: Trade Banner --- */}
-      <div className="max-w-7xl mx-auto w-full relative overflow-hidden rounded-[40px] aspect-[16/9] md:aspect-[21/9] lg:aspect-[25/9]">
-        
-        {/* Background Image Block */}
-        <img 
-          src="https://images.unsplash.com/photo-1611974714658-d78e38d43891?q=80&w=2070&auto=format&fit=crop" 
-          alt="Trading Background"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        
-        {/* Dark Overlay to ensure text readability */}
-        <div className="absolute inset-0 bg-black"></div>
+   <div className="relative w-full max-w-7xl mx-auto overflow-hidden rounded-[24px] sm:rounded-[40px]">
 
-        {/* Content Overlay */}
-     <div className="relative z-10 h-[300] flex flex-col justify-center 
-  px-5 sm:px-6 md:px-20 
-  text-white space-y-4 md:space-y-6 overflow-hidden">
+  {/* Background Image */}
+ 
 
-  {/* Heading Block */}
-  <div className="max-w-xl">
-   <span className="text-[#2DD4BF] font-semibold 
-      text-[10px] sm:text-xs md:text-sm 
-      tracking-widest uppercase">
-  Trusted by Traders Worldwide
-</span>
-<h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl 
-      font-bold mt-2 leading-tight">
-  Trade with Confidence and Security
-</h1>
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-t from-[#07397C] to-[#07192D]"></div>
 
-  </div>
+  {/* Content Wrapper */}
+  <div className="relative z-10 flex flex-col justify-center items-center text-center
+                  px-4 sm:px-6 md:px-16 lg:px-20
+                  min-h-[600px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px]">
 
-  {/* Description */}
-  
-<p className="text-gray-200 max-w-md 
-      text-sm sm:text-base md:text-lg 
-      leading-relaxed">
-  GenZBroking delivers a comprehensive suite of trading instruments and services, 
-  ensuring a seamless, reliable, and professional trading experience.
-</p>
+    {/* Inner content */}
+    <div className="max-w-xl space-y-4 sm:space-y-5 md:space-y-6">
 
-  {/* CTA */}
-  <div className="pt-3 sm:pt-4">
-    <button className="border border-white 
-      text-white font-semibold 
-      text-sm sm:text-base
-      py-2.5 sm:py-3 px-6 sm:px-8 
-      rounded-lg 
-      hover:bg-white hover:text-blue-900 
-      transition-all duration-300">
-      Read more about GenZBroking
-    </button>
+      {/* Tag */}
+      <span className="text-[#2DD4BF] font-semibold text-[10px] sm:text-xs md:text-sm tracking-widest uppercase">
+        Trusted by Traders Worldwide
+      </span>
+
+      {/* Heading */}
+      <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
+        Trade with Confidence and Security
+      </h1>
+
+      {/* Description */}
+      <p className="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
+        GenZBroking delivers a comprehensive suite of trading instruments and services,
+        ensuring a seamless, reliable, and professional trading experience.
+      </p>
+
+      {/* CTA Button */}
+      <button className="border border-white text-white font-semibold text-sm sm:text-base
+                         py-2.5 sm:py-3 px-6 sm:px-8 rounded-lg
+                         hover:bg-white hover:text-blue-900
+                         transition-all duration-300">
+        Read more about GenZBroking
+      </button>
+
+    </div>
   </div>
 </div>
 
-      </div>
+
+
 
     </div>
 

@@ -10,9 +10,9 @@ import images from '../assets/images';
 const Footer = () => {
   const footerData = {
     about: [
-      { name: 'Company', href: '#' },
-      { name: 'Regulation & Licenses', href: '#' },
-      { name: 'Contact Us', href: '#' },
+      { name: 'Company', href: '/company' },
+      { name: 'Regulation & Licenses', href: '/regulation-&-license' },
+      { name: 'Contact Us', href: '/contact-us' },
     ],
     trading: [
       { name: 'Account Types', href: '/account-types' },
@@ -26,10 +26,10 @@ const Footer = () => {
       
     ],
     tools: [
-      { name: 'Economic Calendar', href: '/economic-calender' },
-      { name: 'Forex Market Watch', href: '/forex-market-watch' },
-      { name: 'Market Technical Analysis', href: '/market-technical-analysis' },
-      { name: 'Global Trading Holiday Schedule', href: '/global-trading' },
+      { name: 'Economic Calendar', href: '/tools/economic-calender' },
+      { name: 'Forex Market Watch', href: '/tools/forex-market-watch' },
+      { name: 'Market Technical Analysis', href: '/tools/market-technical-analysis' },
+      { name: 'Global Trading Holiday Schedule', href: '/tools/global-trading' },
     ],
     documents: [
       { name: 'Forms & Documents', href: '/forms-&-documents' },
