@@ -18,7 +18,7 @@ import demoAccounting from './home/demoaccounting.png'
 import heroBg from './furtherpages/herobg.png'
 import contactBg from './furtherpages/contactbg.png'
 import metaTrader5 from './furtherpages/metatrader5.png' 
-
+import blogNextSectionVideo from './home/blognextvideo.mp4'
 // funds //
 import airtel from './funds/airtel.png'
 import banktransfer from './funds/banktransfer.png';
@@ -51,6 +51,8 @@ import blog9 from './blogs/blog9.png'
 
 
 
+
+
 const images = {
     swapFree,
     bgVideo,
@@ -66,6 +68,7 @@ const images = {
     bitCoin,
     promotionBack,
     formAndDocument,
+    blogNextSectionVideo,
     appleStore,
     window,
     mac,

@@ -3,7 +3,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import images from "../assets/images";
- import {
+import {
   FaFacebookF,
   FaEnvelope,
   FaInstagram,

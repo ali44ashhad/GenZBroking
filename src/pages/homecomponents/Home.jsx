@@ -379,12 +379,12 @@ const Home = () => {
         <motion.div
           variants={fadeUp}
           transition={{ delay: 0.2 }}
-          className="w-full max-w-5xl rounded-xl overflow-hidden border-4 border-gray-100"
+          className="w-full max-w-5xl rounded-xl overflow-hidden "
         >
           <div className="aspect-video w-full">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src={images.blogNextSectionVideo}
               title="Platform Walkthrough"
               frameBorder="0"
               allowFullScreen
@@ -397,7 +397,7 @@ const Home = () => {
           transition={{ delay: 0.3 }}
           className="mt-8 text-gray-400 text-sm"
         >
-          Daily Market Insights • Global Coverage • Expert Analysis
+          Real-Time Insights • Worldwide Markets • Professional Expertise
         </motion.div>
       </motion.div>
 
