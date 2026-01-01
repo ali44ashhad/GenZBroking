@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Blogs = () => {
   return (
  <>
-     <div className="flex items-center justify-center h-200 bg-gray-100 p-4">
+     <div className="mt-30 flex items-center justify-center h-150 p-4">
       {/* Main Container */}
       <div className="relative w-full max-w-6xl overflow-hidden rounded-[2.5rem] bg-gradient-to-b from-[#003B95] to-[#001A4D] px-6 py-16 md:py-24 text-center shadow-2xl">
         
@@ -51,14 +51,14 @@ const Blogs = () => {
 
 
 {/* blogs */}
-<section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8 min-h-screen">
+<section className="bg-gray-50 py-5 px-4 sm:px-6 lg:px-8 ">
   
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-5">
     Insights That Shape Smarter Trading Decisions
   </h2>
 
-  <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+  <p className="text-gray-600 text-base sm:text-lg leading-relaxed pb-4">
     Stay ahead of the markets with in-depth analysis across crypto innovation,
     global trading strategies, and macro market trends. From the evolution of
     DeFi ecosystems and session-based trading tactics to long-term commodity
