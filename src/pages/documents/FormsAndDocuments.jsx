@@ -7,7 +7,8 @@ import images from '../../assets/images';
 const FormsAndDocuments = () => {
   return (
     <>
-       <div className="my-20 flex items-center justify-center pt-20 md:pt-40 px-4">
+       <div className="flex items-center justify-center mt-20 md:mt-0 pt-20 md:pt-40 px-4
+">
   {/* Main Container */}
   <div className="relative w-full max-w-6xl overflow-hidden rounded-[2rem] md:rounded-[2.5rem] px-6 py-16 md:py-24 text-center shadow-2xl">
 

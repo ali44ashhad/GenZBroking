@@ -56,7 +56,7 @@ const Blog1 = () => {
           </div>
 
           {/* More Articles */}
-          <div>
+          {/* <div>
             <h4 className="font-semibold mb-4 text-lg">More Articles</h4>
             <ul className="space-y-2 sm:space-y-3">
               {blog.moreArticles.map((item, i) => (
@@ -70,7 +70,7 @@ const Blog1 = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </aside>
 
         {/* RIGHT SIDE */}
